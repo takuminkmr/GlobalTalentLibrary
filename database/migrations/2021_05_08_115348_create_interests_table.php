@@ -14,10 +14,10 @@ class CreateInterestsTable extends Migration
     public function up()
     {
         Schema::create('interests', function (Blueprint $table) {
-            $table->increments('interest_id');
+            $table->increments('id');
             $table->unsignedInteger('interest_member_id');
             $table->unsignedInteger('interest_gt_id');
-            $table->timestamp('added_at', 0);
+            $table->timestamps();
         });
     }
 

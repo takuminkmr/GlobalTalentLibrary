@@ -14,14 +14,14 @@ class CreateApplyMeetsTable extends Migration
     public function up()
     {
         Schema::create('apply_meets', function (Blueprint $table) {
-            $table->increments('apply_meet_id');
+            $table->increments('id');
             $table->unsignedInteger('apply_member_id');
             $table->unsignedInteger('apply_gt_id');
             $table->text('meet_option_day');
             $table->unsignedTinyInteger('meet_way');
             $table->unsignedTinyInteger('meet_purpose');
             $table->text('purpose_detail');
-            $table->timestamp('applied_at', 0);
+            $table->timestamps();
         });
     }
 

@@ -14,14 +14,16 @@ class CreateGlobalTalentsTable extends Migration
     public function up()
     {
         Schema::create('global_talents', function (Blueprint $table) {
-            $table->increments('gt_id');
-            $table->string('gt_name');
-            $table->string('school');
-            $table->string('faculty');
+            $table->increments('id');
+            $table->string('gt_name', 100);
+            $table->string('school', 100);
+            $table->string('faculty', 100);
             $table->text('introduction');
             $table->text('photo');
+            $table->text('photo_path');
             $table->text('video');
             $table->string('gt_email')->unique();
+            $table->timestamps();
         });
     }
 
