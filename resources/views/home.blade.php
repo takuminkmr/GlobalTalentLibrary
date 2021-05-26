@@ -36,7 +36,7 @@
                     @endforeach
                 </div>
                 <div class="card-deck second-row">
-                @foreach($global_talent_introductions as $global_talent_introduction)
+                    @foreach($global_talent_introductions as $global_talent_introduction)
                     <div class="card">  
                         <a class="text-decoration-none" href="/detail/{{ $global_talent_introduction->id }}">
                         <img src="{{ Storage::url($global_talent_introduction->photo_path) }}">

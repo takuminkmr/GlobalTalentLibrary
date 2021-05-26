@@ -1,6 +1,22 @@
 @import 'variables';
 @import 'mixin';
 
+button.opinion-btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: fixed;
+    margin: 0 3rem 3rem auto;
+}
+
+h2.title {
+    @include title-heading;
+}
+
+.max-w-400 {
+    max-width: 400px;
+}
+
 .pg-top {
     position: relative;
 
@@ -310,11 +326,7 @@
 }
 
 .apply {
-    h2.title {
-        margin: 50px auto;
-    }
     h2 {
-        text-align: center;
         margin: 20px auto;
     }
     .img-box {
@@ -332,11 +344,6 @@
 }
 
 .interest {
-    h2.title {
-        text-align: center;
-        margin: 30px auto;
-    }
-
     .card {
         width: 325px; 
         margin: 25px;
@@ -353,10 +360,6 @@
 }
 
 .history {
-    h2.title {
-        text-align: center;
-        margin: 50px auto;
-    }
     .justify-content-center {
         .row {
             align-items: center;

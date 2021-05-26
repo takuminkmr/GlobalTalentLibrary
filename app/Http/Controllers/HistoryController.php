@@ -26,6 +26,9 @@ class HistoryController extends Controller
             $meet_purpose = $apply_meet->meet_purpose;
         }
 
+        if(!isset($meet_way)) {
+            $meet_way = '';
+        }
         if($meet_way === 1) {
             $meet_way = 'ウェブで';
         }
@@ -36,6 +39,9 @@ class HistoryController extends Controller
             $meet_way = 'その他の方法で';
         }
 
+        if(!isset($meet_purpose)) {
+            $meet_purpose = '';
+        }
         if($meet_purpose === 1) {
             $meet_purpose = '社員として採用を検討';
         }

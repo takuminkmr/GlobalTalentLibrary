@@ -103,7 +103,6 @@
                             </div>
                         </div>
 
-                        <!-- このフォームの情報はDBに入れなくていいか？また、Valueの設定は正しい？ -->
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <input type="checkbox" value="1" required><a href="#">利用規約</a>ならびに<a href="#">個人情報保護方針</a>に同意する

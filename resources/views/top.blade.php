@@ -16,15 +16,24 @@
         <title>{{ config('app.name', 'Global Talent Library') }}</title>
 
         <!-- Scripts -->
+        @if(app('env') == 'production')
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
+        @else
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        @endif
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <!-- <link href="https://fonts.googleapis.com/css?family=Jomolhari" rel="stylesheet"> -->
 
         <!-- Styles -->
+        @if(app('env') == 'production')
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
+        @else
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        @endif
         <style>
             body {
                 background-color: #f6f8f8;

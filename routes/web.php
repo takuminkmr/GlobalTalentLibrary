@@ -17,17 +17,19 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('applicationForm');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 Route::get('/apply/{id}', 'ApplyController@show')->name('apply');
 Route::post('/complete', 'ApplyController@complete')->name('complete');
 Route::get('/{id}/interest', 'InterestController@index')->name('interest');
-Route::POST('/interest/add', 'InterestController@add')->name('interest.add');
+Route::post('/interest/add', 'InterestController@add')->name('interest.add');
 Route::get('/{id}/history', 'HistoryController@index')->name('history');
 Route::get('/{id}/profile', 'ProfileController@index')->name('profile');
 Route::get('/{id}/edit', 'EditController@index')->name('edit');
 Route::get('/{id}/confirm', 'ConfirmController@index')->name('confirm');
+Route::get('/opinion', 'OpinionController@index')->name('opinion');
+Route::post('/opinion/add', 'OpinionController@add')->name('opinion.add');
+Route::post('/opinion/todo', 'OpinionController@todo')->name('opinion.todo');
 
 Route::group(['prefix' => 'gt', 'middleware' => 'auth'], function(){
     Route::get('index', 'GtController@index')->name('gt.index');

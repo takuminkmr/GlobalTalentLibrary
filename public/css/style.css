@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+button.opinion-btn {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: fixed;
+  margin: 0 3rem 3rem auto;
+}
+
+h2.title {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.max-w-400 {
+  max-width: 400px;
+}
+
 .pg-top {
   position: relative;
 }
@@ -303,12 +320,7 @@
   margin-top: 30px;
 }
 
-.apply h2.title {
-  margin: 50px auto;
-}
-
 .apply h2 {
-  text-align: center;
   margin: 20px auto;
 }
 
@@ -328,11 +340,6 @@
   text-align: center;
 }
 
-.interest h2.title {
-  text-align: center;
-  margin: 30px auto;
-}
-
 .interest .card {
   width: 325px;
   margin: 25px;
@@ -347,11 +354,6 @@
 
 .interest .card h5.name {
   text-align: center;
-}
-
-.history h2.title {
-  text-align: center;
-  margin: 50px auto;
 }
 
 .history .justify-content-center .row {
