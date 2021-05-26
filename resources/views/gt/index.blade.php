@@ -23,7 +23,7 @@
                 @foreach($global_talents as $global_talent)
                 <a class="text-decoration-none" href="show/{{ $global_talent->id }}">
                 <div class="card">
-                <img src="{{ Storage::url($global_talent->photo_path) }}">
+                <img src="{{ Storage::url($global_talent->photo) }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ $global_talent->gt_name }}</h5>
                         <h5 class="card-title">{{ $global_talent->school }}</h5>

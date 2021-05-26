@@ -7,7 +7,7 @@
         @foreach($interests as $interest)
         <a class="text-decoration-none" href="/detail/{{ $interest->id }}">
         <div class="card">
-        <img src="{{ Storage::url($interest->photo_path) }}">
+        <img src="{{ Storage::url($interest->photo) }}">
             <div class="card-body">
                 <h5 class="card-title name">{{ $interest->gt_name }}</h5>
                 <h5 class="card-title">{{ $interest->school }}</h5>

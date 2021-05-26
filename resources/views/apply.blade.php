@@ -5,7 +5,7 @@
     <h2 class="title">面会申込みフォーム</h2>
     <div class="row justify-content-center">
         <div class="col-md-3 img-box">
-            <img src="{{ Storage::url($global_talent->photo_path) }}">
+            <img src="{{ Storage::url($global_talent->photo) }}">
             <h2>{{ $global_talent->gt_name }}</h2>
             <h4>{{ $global_talent->faculty }}</h4>
         </div>

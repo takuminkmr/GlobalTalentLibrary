@@ -9,7 +9,7 @@
         <div class="col-sm-8 row wrap">
             <div class="col-sm-4 gt-sec">
                 <div class="img-box">
-                <img src="{{ Storage::url($apply_meet->photo_path) }}">
+                <img src="{{ Storage::url($apply_meet->photo) }}">
                 </div>
                 <h5>{{ $apply_meet->gt_name }}</h5>
                 <h5>{{ $apply_meet->school }}</h5>

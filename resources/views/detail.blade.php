@@ -3,8 +3,8 @@
 @section('content')
 <div class="container detail">
     <div class="row justify-content-center wrap">
-        <div class="col-md-5">
-            <div class="iframe-box"><iframe src="{{ $global_talent->video }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Global Talent タレクさん"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="col-md-7">
+            <div class="iframe-box"><iframe src="{{ $global_talent->video }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Global Talent"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </div>
         <div class="col-md-5">
             <h2>{{ $global_talent->gt_name }}</h2>

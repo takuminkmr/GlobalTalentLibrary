@@ -25,10 +25,10 @@ class HomeController extends Controller
     public function index()
     {   
         $new_faces = DB::table('global_talents')->latest()->limit(3)->get();
-        $global_talent_names = DB::table('global_talents')->orderBy('gt_name', 'desc')->limit(4)->get();
-        $global_talent_introductions = DB::table('global_talents')->orderBy('introduction', 'desc')->limit(4)->get();
+        $global_talent_names = DB::table('global_talents')->orderBy('gt_name', 'desc')->get();
+        // $global_talent_introductions = DB::table('global_talents')->orderBy('introduction', 'desc')->limit(6)->get();
 
-        return view('home', compact('new_faces', 'global_talent_names', 'global_talent_introductions'));
+        return view('home', compact('new_faces', 'global_talent_names'));
     }
 
     /**

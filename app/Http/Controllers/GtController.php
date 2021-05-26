@@ -52,8 +52,7 @@ class GtController extends Controller
 			$path = $upload_photo->store('uploads',"public");
 			//画像の保存に成功したら登録用の変数に代入する
 			if($path){
-                $global_talent->photo = $upload_photo->getClientOriginalName();
-                $global_talent->photo_path = $path;
+                $global_talent->photo = $path;
 			}
 		}
         
@@ -105,12 +104,26 @@ class GtController extends Controller
     public function update(Request $request, $id)
     {
         $global_talent = GlobalTalent::find($id);
+
+        $request->validate([
+            'photo' => 'file|image|mimes:png,jpeg'
+        ]);
+
+        $upload_photo = $request->file('photo');
+
+        if($upload_photo) {
+			//アップロードされた画像を保存する
+			$path = $upload_photo->store('uploads',"public");
+			//画像の保存に成功したら登録用の変数に代入する
+			if($path){
+                $global_talent->photo = $path;
+			}
+		}
         
         $global_talent->gt_name = $request->input('gt_name');
         $global_talent->school = $request->input('school');
         $global_talent->faculty = $request->input('faculty');
         $global_talent->introduction = $request->input('introduction');
-        $global_talent->photo = $request->input('photo');
         $global_talent->video = $request->input('video');
         $global_talent->gt_email = $request->input('gt_email');
 

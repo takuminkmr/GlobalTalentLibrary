@@ -13,8 +13,21 @@ h2.title {
   text-align: center;
 }
 
+h2.title-m-t {
+  margin-top: 50px;
+}
+
 .max-w-400 {
   max-width: 400px;
+}
+
+.card-deck .card .card-body {
+  color: #333;
+}
+
+.card-deck .card .card-body h5,
+.card-deck .card .card-body h6 {
+  font-weight: 600;
 }
 
 .pg-top {
@@ -261,8 +274,8 @@ h2.title {
   transform: rotate(90deg);
 }
 
-.home .wrap {
-  margin: 50px 0;
+.home .wrap .card-deck .card {
+  margin-top: 15px;
 }
 
 .home .wrap img {
@@ -270,10 +283,6 @@ h2.title {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.home .wrap .second-row {
-  margin: 15px -15px;
 }
 
 .home .success-story .card {

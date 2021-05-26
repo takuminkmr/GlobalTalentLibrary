@@ -19,8 +19,7 @@ class CreateGlobalTalentsTable extends Migration
             $table->string('school', 100);
             $table->string('faculty', 100);
             $table->text('introduction');
-            $table->text('photo');
-            $table->text('photo_path');
+            $table->text('photo')->nullable();
             $table->text('video');
             $table->string('gt_email')->unique();
             $table->timestamps();
