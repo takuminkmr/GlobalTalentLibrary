@@ -16,7 +16,7 @@
         <title>{{ config('app.name', 'Global Talent Library') }}</title>
 
         <!-- Scripts -->
-        @if(app('env') == 'production')
+        @if(app('env') == 'heroku')
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
         @else
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -27,7 +27,7 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Jomolhari" rel="stylesheet"> -->
 
         <!-- Styles -->
-        @if(app('env') == 'production')
+        @if(app('env') == 'heroku')
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
         @else
