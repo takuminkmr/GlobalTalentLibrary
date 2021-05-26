@@ -25,16 +25,17 @@
     <h2 class="title">処理済み</h2>
     <div class="row justify-content-center">        
         @foreach($doneOpinions as $opinion)
-        <div class="card-deck row">
+        <div class="card-deck row" style="margin-bottom: 15px;">
             <div class="card col-sm-6">
-                <img class="card-img-top img-fluid" src="{{ Storage::url($opinion->photo) }}">
+                <img class="card-img-top" src="{{ Storage::url($opinion->photo) }}">
                 <div class="card-body">
                     <p>{{ $opinion->opinion }}</p>
                     <form method="POST" action="{{ route('opinion.todo') }}">
                     @csrf
                     <input type="hidden" name="id" value="{{ $opinion->id }}">
                     <input type="hidden" name="todo" value="1">
-                    <button type="submit" class="btn btn-danger">ToDoに戻す</button>
+                    <button type="submit" class="btn btn-info">ToDoに戻す</button>
+                    <!-- <button type="submit" class="btn btn-danger" onclick="deleteCheck()">削除する</button> -->
                 </form>
                 </div>
             </div>

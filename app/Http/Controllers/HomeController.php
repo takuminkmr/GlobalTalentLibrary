@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['thanks']);
     }
 
     /**
@@ -29,5 +29,15 @@ class HomeController extends Controller
         $global_talent_introductions = DB::table('global_talents')->orderBy('introduction', 'desc')->limit(4)->get();
 
         return view('home', compact('new_faces', 'global_talent_names', 'global_talent_introductions'));
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function thanks()
+    {   
+        return view('thanks');
     }
 }

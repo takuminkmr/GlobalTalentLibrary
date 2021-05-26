@@ -37,7 +37,7 @@ class OpinionController extends Controller
         $upload_photo = $request->file('photo');
 
         if($upload_photo) {
-			$path = $upload_photo->store('uploads',"public");
+			$path = $upload_photo->store('todos',"public");
             if($path){
                 $opinions->photo = $path;
 			}
@@ -57,6 +57,15 @@ class OpinionController extends Controller
         $opinions->todo = $request->input('todo');
         $opinions->save();
 
-        return redirect($opinions->url);
+        return redirect('opinion');
     }
+
+    // public function delete(Request $request)
+    // {
+    //     $id = $request->input('id');
+    //     $opinions = Opinion::find($id);
+    //     $opinions->delete();
+
+    //     return redirect('opinion');
+    // }
 }

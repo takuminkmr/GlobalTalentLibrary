@@ -102,7 +102,7 @@
             <div id="modal-dialog-opinion" class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="opinionTitle">ここ直すともっと良くなるでしょう</h5>
+                        <h5 class="modal-title" id="opinionTitle">ここを直すとGTLはもっと良くなるでしょう！</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -113,10 +113,10 @@
                         <input type="hidden" name="url" value="{{ url()->current() }}">
                         <input type="hidden" name="todo" value="1">
                         <div class="form-group">
-                            <textarea class="form-control" rows="3" columns="20" name="opinion" value="" required></textarea>
+                            <textarea class="form-control" rows="5" columns="20" name="opinion" value="" required></textarea>
                         </div>
                         <div class="form-group">
-                        <label for="photo" class="h5">写真があれば、ぜひ添付してください！</label>
+                        <label for="photo" class="h5">修正すべき場所の写真があれば、添付してください！</label>
                         <input type="file" class="@error('photo') is-invalid @enderror" name="photo" accept="image/jpeg, image/png" required>
                         <p><small class="text-muted">※jpegもしくはpng</small></p>
                         </div>

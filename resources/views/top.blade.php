@@ -69,7 +69,7 @@
                         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="h-adr">
                         @csrf
                         <input type="hidden" name="oid" value="00D2v000001Xv2Z">
-                        <input type="hidden" name="retURL" value="http://sociarise.co.jp/thanks/">
+                        <input type="hidden" name="retURL" value="{{ route('thanks') }}">
                         <input type="hidden" id="lead_source" name="lead_source" value="Web">
                         <input type="hidden" id="rating" name="rating" value="Warm">
                         <input type="hidden" id="00N2u000000SqF0" name="00N2u000000SqF0" title="問い合わせ種別" value="Global Talent Library">
