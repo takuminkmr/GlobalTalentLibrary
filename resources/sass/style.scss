@@ -9,6 +9,10 @@ button.opinion-btn {
     margin: 0 3rem 3rem auto;
 }
 
+.full-height {
+    height: 100vh;
+}
+
 h2.title {
     @include title-heading;
 }
@@ -60,12 +64,10 @@ h2.title-m-t {
         }
     }
 
-    .full-height {
-        height: 100vh;
-    }
 
     .top-img {
-        background-image: url(../../images/product-school-DL-yyYDDNX4-unsplash.jpg); 
+        background-image: url(../../images/product-school-DL-yyYDDNX4-unsplash.jpg);
+        background-position: right;
         background-size: cover; 
         width: 100%;
         position: relative;
@@ -106,7 +108,6 @@ h2.title-m-t {
     }
 
     .what-is-gt {
-        
         .row {
             position: relative;
         }
@@ -114,10 +115,25 @@ h2.title-m-t {
         .impr {
             background: no-repeat url(what-is-gt-impr.png);
             height: 70vh;
-            width: 30%;
+            width: 45%;
             position: absolute;
             top: 0;
             right: 0;
+            @include screen-mobile {
+                width: 45%;
+            };
+            @include screen-tablet {
+                width: 42%;
+            };
+            @include screen-laptop {
+                width: 42%;
+            };
+            @include screen-desktop {
+                width: 40%;
+            };
+            @include screen-hd {
+                width: 30%;
+            };
         }
     }
 
@@ -295,7 +311,7 @@ h2.title-m-t {
     .wrap {
         .card-deck {
             .card {
-                margin-top: 15px;
+                margin-top: 30px;
             }
         }
 
@@ -418,28 +434,4 @@ h2.title-m-t {
 .gt-show {
     margin: 50px auto;
     @include iframe
-}
-
-@include screen-mobile {
-    .pg-top {
-        .top-img {
-            background-position: right; 
-        }
-    }
-
-    .home {
-        .wrap {
-            .second-row {
-                margin: 0;
-            }
-        }
-
-        .success-story {
-            .float-right {
-                .img-box {
-                    text-align: right;
-                }
-            }
-        }
-    }
 }
