@@ -16,9 +16,11 @@ class HistoryController extends Controller
     public function index($id)
     {
         $id = Auth::id();
-        $apply_meets = DB::table('apply_meets')->where('apply_member_id', '=', $id)
+        $apply_meets = DB::table('apply_meets')
+        ->where('apply_member_id', '=', $id)
         ->join('global_talents', 'apply_meets.apply_gt_id', '=', 'global_talents.id')
         ->select('apply_meets.*', 'global_talents.*')
+        ->orderBy('apply_meets.id', 'desc')
         ->get();
         
         foreach($apply_meets as $apply_meet) {

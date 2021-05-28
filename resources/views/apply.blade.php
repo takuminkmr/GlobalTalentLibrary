@@ -13,10 +13,9 @@
             <form method="POST" action="{{ route('complete') }}">
             @csrf
                 <div class="form-group row">
-                    <label for="meet_option_day" class="col-md-4 col-form-label text-md-right">{{ __('面会希望日時') }}</label>
+                    <label for="meet_option_day" class="col-md-4 col-form-label text-md-right">{{ __('面会希望日程') }}</label>
                     <div class="col-md-8">
-                        <textarea class="form-control @error('meet_option_day') is-invalid @enderror" id="meet_option_day" name="meet_option_day" rows="3" placeholder="候補１：4月1日 15:00〜18:00" required autofocus></textarea>
-
+                        <input type="text" class="form-control @error('meet_option_day') is-invalid @enderror" id="meet_option_day" name="meet_option_day" value="" placeholder="４月１日、４月２日、４月３日" required autofocus>
                         @error('entity_name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -57,7 +56,7 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose2" value="2">
-                            <label class="form-check-label" for="meet_purpose2">インターンシップ</label>
+                            <label class="form-check-label" for="meet_purpose2">インターンシップのお誘い</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose3" value="3">

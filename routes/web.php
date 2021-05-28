@@ -22,6 +22,7 @@ Route::get('/thanks', 'HomeController@thanks')->name('thanks');
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 Route::get('/apply/{id}', 'ApplyController@show')->name('apply');
 Route::post('/complete', 'ApplyController@complete')->name('complete');
+// Route::get('/invite', 'InviteMailController@send')->name('invite');
 Route::get('/{id}/interest', 'InterestController@index')->name('interest');
 Route::post('/interest/add', 'InterestController@add')->name('interest.add');
 Route::get('/{id}/history', 'HistoryController@index')->name('history');
