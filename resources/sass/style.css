@@ -1,81 +1,43 @@
-@charset "UTF-8";
-
 @media (orientation: landscape) and (max-width: 575px) {
-  h1,
-  h2,
-  .h1,
-  .h2 {
+  h1, h2, .h1, .h2 {
     font-size: 1.5rem;
   }
-
-  h2,
-  .h2 {
+  h2, .h2 {
     font-size: 1.2rem;
   }
-
-  h3,
-  h4,
-  h5,
-  .h3,
-  .h4,
-  .h5 {
+  h3, h4, h5, .h3, .h4, .h5 {
     font-size: 1rem;
   }
-
   .display-4 {
     font-size: 2.2rem;
   }
 }
 
 @media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
-  h1,
-  h2,
-  .h1,
-  .h2 {
+  h1, h2, .h1, .h2 {
     font-size: 1.6rem;
   }
-
-  h2,
-  .h2 {
+  h2, .h2 {
     font-size: 1.4rem;
   }
-
-  h3,
-  h4,
-  h5,
-  .h3,
-  .h4,
-  .h5 {
+  h3, h4, h5, .h3, .h4, .h5 {
     font-size: 1.2rem;
   }
-
   .display-4 {
     font-size: 2.4rem;
   }
 }
 
 @media (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-  h1,
-  h2,
-  .h1,
-  .h2 {
+  h1, h2, .h1, .h2 {
     font-size: 1.8rem;
   }
-
-  h2,
-  .h2 {
+  h2, .h2 {
     font-size: 1.6rem;
   }
-
-  h3,
-  h4,
-  h5,
-  .h3,
-  .h4,
-  .h5 {
+  h3, h4, h5, .h3, .h4, .h5 {
     font-size: 1.4rem;
   }
-
   .display-4 {
     font-size: 2.6rem;
   }
@@ -110,8 +72,7 @@ h2.title-m-t {
   color: #333;
 }
 
-.card-deck .card .card-body h5,
-.card-deck .card .card-body h6 {
+.card-deck .card .card-body h5, .card-deck .card .card-body h6 {
   font-weight: 600;
 }
 
@@ -167,7 +128,7 @@ h2.title-m-t {
 }
 
 .pg-top .top-img {
-  background-image: url(/images/product-school-DL-yyYDDNX4-unsplash.jpg?b335feca6bdad4004b25eb465dd9530a);
+  background-image: url(../../images/product-school-DL-yyYDDNX4-unsplash.jpg);
   background-position: 70%;
   background-size: cover;
   width: 100%;
@@ -290,7 +251,7 @@ h2.title-m-t {
 }
 
 .pg-top .what-is-gt .impr {
-  background: no-repeat url(/images/what-is-gt-impr.png?d7e9fcbfb6caf03e852e9fc40f26ff9f);
+  background: no-repeat url(what-is-gt-impr.png);
   height: 70vh;
   width: 45%;
   position: absolute;
@@ -348,7 +309,7 @@ h2.title-m-t {
 }
 
 .pg-top .meet-to-know .impr {
-  background: no-repeat url(/images/meet-to-know-impr.png?141a1ff1c13ae2a40ae37c192245608c);
+  background: no-repeat url(meet-to-know-impr.png);
   height: 70vh;
   width: 40%;
   position: absolute;
@@ -473,11 +434,12 @@ h2.title-m-t {
   position: relative;
   background: white;
   height: 64px;
-  transition: all 0.15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .pg-top .faq .box::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   top: 0;
@@ -485,7 +447,8 @@ h2.title-m-t {
   left: 0;
   right: 0;
   pointer-events: none;
-  box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 .pg-top .faq .box-title {
@@ -523,7 +486,8 @@ h2.title-m-t {
 .pg-top .faq input:checked + .box {
   height: auto;
   margin: 16px 0;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
 }
 
 .pg-top .faq input:checked + .box .box-title {
@@ -543,16 +507,20 @@ h2.title-m-t {
 .pg-top .faq .arrows section .box-title:before {
   position: absolute;
   display: block;
-  content: "\203A";
+  content: '\203a';
   font-size: 18pt;
   left: 20px;
   top: -2px;
-  transition: transform 0.15s ease-in-out;
+  -webkit-transition: -webkit-transform .15s ease-in-out;
+  transition: -webkit-transform .15s ease-in-out;
+  transition: transform .15s ease-in-out;
+  transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .pg-top .faq input:checked + section.box .box-title:before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .home .wrap .card-deck .card {
@@ -582,7 +550,9 @@ h2.title-m-t {
 }
 
 .detail .wrap {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
 }
 
@@ -604,9 +574,16 @@ h2.title-m-t {
 }
 
 .detail .invite {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 30px;
 }
 
@@ -621,8 +598,7 @@ h2.title-m-t {
      object-fit: cover;
 }
 
-.apply .img-box h2,
-.apply .img-box h4 {
+.apply .img-box h2, .apply .img-box h4 {
   text-align: center;
 }
 
@@ -643,7 +619,9 @@ h2.title-m-t {
 }
 
 .history .justify-content-center .row {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #CCC;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -671,8 +649,7 @@ h2.title-m-t {
   margin-bottom: 30px;
 }
 
-.gt-index .list h3,
-.gt-index .list h5 {
+.gt-index .list h3, .gt-index .list h5 {
   text-align: center;
 }
 
@@ -697,4 +674,4 @@ h2.title-m-t {
   width: 100%;
   height: 100%;
 }
-
+/*# sourceMappingURL=style.css.map */
