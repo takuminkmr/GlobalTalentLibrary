@@ -1,13 +1,13 @@
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   h1, .h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 600;
   }
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   h3, h4, h5, h6, p, .h3, .h4, .h5 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .display-4 {
     font-size: 2.4rem;
@@ -16,16 +16,16 @@
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
   h1, .h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   h3, h4, h5, h6, p, .h3, .h4, .h5 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .display-4 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -106,9 +106,9 @@ h2.title-m-t {
   font-size: 1.4rem;
 }
 
-@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
   }
 }
@@ -203,6 +203,12 @@ h2.title-m-t {
   opacity: 0;
 }
 
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .top-img .movetext1 span {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1rem;
@@ -230,6 +236,12 @@ h2.title-m-t {
   font-size: 3rem;
   color: white;
   opacity: 0;
+}
+
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .top-img .movetext2 span {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
