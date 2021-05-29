@@ -7,17 +7,17 @@
   }
 }
 @mixin screen-desktop {
-  @media only screen and (min-width: $desktop-min) and (max-width: $desktop-max) {
+  @media only screen and (min-width: $desktop-min) {
     @content;
   }
 }
 @mixin screen-laptop {
-  @media only screen and (min-width: $laptop-min) and (max-width: $laptop-max) {
+  @media only screen and (min-width: $laptop-min) {
     @content;
   }
 }
 @mixin screen-tablet {
-  @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media only screen and (min-width: $tablet-min) {
     @content;
   }
 }
