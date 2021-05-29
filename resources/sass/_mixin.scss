@@ -70,33 +70,21 @@
 }
 
 // 高解像度ディスプレイを基本としたデバイス用（横向き）
-@mixin screen-landscape {
-  @media (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
-  (min-resolution: 2dppx) and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin screen-hd-landscape {
-  @media (min-width: $hd-min) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
-  (min-width: $hd-min) and (min-resolution: 2dppx) and (orientation: $landscape) {
-    @content;
-  }
-}
 @mixin screen-desktop-landscape {
-  @media (min-width: $desktop-min) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
-  (min-width: $desktop-min) and (min-resolution: 2dppx) and (orientation: $landscape) {
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
+  (min-width: $desktop-min) and (max-width: $desktop-max) and (min-resolution: 2dppx) and (orientation: $landscape) {
     @content;
   }
 }
 @mixin screen-laptop-landscape {
-  @media (min-width: $laptop-min) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
-  (min-width: $laptop-min) and (min-resolution: 2dppx) and (orientation: $landscape) {
+  @media (min-width: $laptop-min) and (max-width: $laptop-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
+  (min-width: $laptop-min) and (max-width: $laptop-max) and (min-resolution: 2dppx) and (orientation: $landscape) {
     @content;
   }
 }
 @mixin screen-tablet-landscape {
-  @media (min-width: $tablet-min) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
-  (min-width: $tablet-min) and (min-resolution: 2dppx) and (orientation: $landscape) {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
+  (min-width: $tablet-min) and (max-width: $tablet-max) and (min-resolution: 2dppx) and (orientation: $landscape) {
     @content;
   }
 }
@@ -167,28 +155,18 @@
 }
 
 // 通常のメディアクエリ用（横向き）
-@mixin nrm-screen-landscape {
-  @media only screen and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-hd-landscape {
-  @media only screen and (min-width: $hd-min) and (orientation: $landscape) {
-    @content;
-  }
-}
 @mixin nrm-screen-desktop-landscape {
-  @media only screen and (min-width: $desktop-min) and (orientation: $landscape) {
+  @media only screen and (min-width: $desktop-min) and (max-width: $desktop-max) and (orientation: $landscape) {
     @content;
   }
 }
 @mixin nrm-screen-laptop-landscape {
-  @media only screen and (min-width: $laptop-min) and (orientation: $landscape) {
+  @media only screen and (min-width: $laptop-min) and (max-width: $laptop-max) and (orientation: $landscape) {
     @content;
   }
 }
 @mixin nrm-screen-tablet-landscape {
-  @media only screen and (min-width: $tablet-min) and (orientation: $landscape) {
+  @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) and (orientation: $landscape) {
     @content;
   }
 }

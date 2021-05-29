@@ -3,14 +3,14 @@
 
 @include screen-mobile {
     h1,.h1 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         font-weight: 600;
     }
     h2,.h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     h3,h4,h5,h6,p,.h3,.h4,.h5 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .display-4 {
         font-size: 2.4rem;
@@ -18,16 +18,16 @@
 }
 @include screen-tablet {
     h1,.h1 {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
     h2,.h2 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     h3,h4,h5,h6,p,.h3,.h4,.h5 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .display-4 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
 }
 @include screen-laptop {
@@ -96,8 +96,8 @@ h2.title-m-t {
             color: #FFF; 
             padding: 0 0.5rem;
             font-size: 1.4rem;
-            @include screen-mobile-portrait {
-                font-size: 2.2rem;
+            @include screen-tablet-portrait {
+                font-size: 1.8rem;
                 font-weight: 600;
             }
             @include screen-mobile-landscape {
@@ -166,6 +166,9 @@ h2.title-m-t {
                 font-size: 2rem; 
                 color: white;
                 opacity:0;
+                @include screen-tablet-portrait {
+                    font-size: 2.2rem;
+                }
                 @include screen-mobile-landscape {
                     font-size: 1rem;
                 }
@@ -184,6 +187,9 @@ h2.title-m-t {
                 font-size: 3rem; 
                 color: white;
                 opacity:0;
+                @include screen-tablet-portrait {
+                    font-size: 2.2rem;
+                }
                 @include screen-mobile-landscape {
                     font-size: 2rem;
                 }
