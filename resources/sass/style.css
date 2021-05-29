@@ -369,18 +369,6 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
-  .pg-top .what-is-gt .descr .first {
-    padding-left: 5rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
-  .pg-top .what-is-gt .descr .third {
-    padding-right: 5rem;
-  }
-}
-
 .pg-top .what-is-gt .impr {
   background: no-repeat url(what-is-gt-impr.png);
   height: 70vh;
@@ -535,6 +523,12 @@ h2.title-m-t {
 }
 
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
+  .pg-top .gt-sample .row .intro {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
