@@ -174,7 +174,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
     padding: 0 1rem;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
   }
 }
@@ -369,13 +369,13 @@ h2.title-m-t {
   }
 }
 
-@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .descr .first {
     padding-left: 5rem;
   }
 }
 
-@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .descr .third {
     padding-right: 5rem;
   }
