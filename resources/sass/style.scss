@@ -75,7 +75,7 @@
         font-size: 1.6rem;
     }
     .display-4 {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
     .btn {
         font-size: 2.4rem;
@@ -163,6 +163,11 @@ h2.title-m-t {
     #applicationForm {     
         #modal-dialog-appform {
             max-width: 800px;
+            .modal-body {
+                @include screen-tablet-portrait {
+                    font-size: 1.6rem;
+                }
+            }
 
             .form-check {
                 input {
@@ -313,7 +318,7 @@ h2.title-m-t {
             }
             @include screen-tablet-portrait {
                 width: 60%;
-                height: 400vh
+                height: 300vh
             }
         }
     }
@@ -343,7 +348,7 @@ h2.title-m-t {
             }
             @include screen-tablet-portrait {
                 width: 50%;
-                height: 450vh;
+                height: 300vh;
             }
         }
         .descr {
