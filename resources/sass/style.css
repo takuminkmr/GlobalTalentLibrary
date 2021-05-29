@@ -1,5 +1,5 @@
 @media only screen and (max-width: 575px) {
-  h1, h2, .h1, .h2 {
+  h1, .h1 {
     font-size: 1.5rem;
   }
   h2, .h2 {
@@ -14,7 +14,7 @@
 }
 
 @media only screen and (min-width: 576px) {
-  h1, h2, .h1, .h2 {
+  h1, .h1 {
     font-size: 1.6rem;
   }
   h2, .h2 {
@@ -29,7 +29,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  h1, h2, .h1, .h2 {
+  h1, .h1 {
     font-size: 1.8rem;
   }
   h2, .h2 {
@@ -52,7 +52,7 @@ button.opinion-btn {
 }
 
 .full-height {
-  height: 100vh;
+  height: 80vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-resolution: 2dppx) and (orientation: portrait) {
