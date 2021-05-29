@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixin';
 
-@include screen-mobile-landscape {
+@include screen-mobile {
     h1,h2,.h1,.h2 {
         font-size: 1.5rem;
     }
@@ -15,7 +15,7 @@
         font-size: 2.2rem;
     }
 }
-@include screen-tablet-landscape {
+@include screen-tablet {
     h1,h2,.h1,.h2 {
         font-size: 1.6rem;
     }
@@ -29,7 +29,7 @@
         font-size: 2.4rem;
     }
 }
-@include screen-laptop-landscape {
+@include screen-laptop {
     h1,h2,.h1,.h2 {
         font-size: 1.8rem;
     }
@@ -54,6 +54,9 @@ button.opinion-btn {
 
 .full-height {
     height: 100vh;
+    @include screen-portrait {
+        height: 70vh;
+    }
 }
 
 h2.title {
@@ -92,6 +95,10 @@ h2.title-m-t {
             color: #FFF; 
             padding: 0 0.5rem;
             font-size: 1.4rem;
+            @include screen-mobile-portrait {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
             @include screen-mobile-landscape {
                 font-size: 1rem;
             }
