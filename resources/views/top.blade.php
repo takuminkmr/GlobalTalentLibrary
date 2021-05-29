@@ -153,7 +153,7 @@
                     <div class="col-md-6 offset-md-2 descr">
                         <h2 class="text-center">Global Talentとは？</h2>
                         <h6 class="text-center pb-3">今の限界を打破する、未来の戦力</h6>
-                        <p class="py-3 pl-5"><span class="h1 text-primary pr-3">才能</span>国の代表として最高の教育を享受</p>
+                        <p class="py-3 pl-4"><span class="h1 text-primary pr-3">才能</span>国の代表として最高の教育を享受</p>
                         <p class="py-3 text-center"><span class="h1 text-primary pr-3">貪欲</span>現状に満足せず、挑戦し続けるタフさ</p>
                         <p class="py-3 pr-5 text-right"><span class="h1 text-primary pr-3">知日</span>日本を知り、日本語を扱える</p>
                     </div>
@@ -177,7 +177,7 @@
         </section>
         <section class="gt-sample">
         <div class="container">
-            <h2 class="display-4">Global Talent Libraryでは、<br>こんな人たちと出会えます</h2>
+            <h2 class="display-4">Global Talent Libraryでは、<br>こんな人たちと出会えます。</h2>
             <div class="row">
                 <div class="col-md img">
                     <img class="img-fluid" src="../../images/sandeep-min.jpg">
@@ -208,7 +208,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md intro">
+                <div class="col-md order-md-last img">
+                    <img class="img-fluid" src="../../images/sharma-min.jpg">
+                </div>
+                <div class="col-md order-md-first intro">
                     <h3 class="h1">シャルマ</h3>
                     <h4>東京大学大学院　文化人類学研究生</h4>
                     <p>自走型のお手本。「人に伝える」ことに高い関心を持ち、ブログ・ウェブサイトの構築からSEOまで自主学習で実行。</p>
@@ -231,9 +234,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md img">
-                    <img class="img-fluid" src="../../images/sharma-min.jpg">
                 </div>
             </div>
             <div class="row">
@@ -268,38 +268,38 @@
         </div>
         </section>
         <section class="service-flow pt-5">
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center mt-5">サービスの流れ</h2>
             <h6 class="text-center pb-3">刺激的な出会いまでの５ステップ</h6>
             <div class="row justify-content-center">
-                <div class="col-lg-2 col-sm-3 px-3 m-1 steps">
+                <div class="col-lg-2 col-md-3 col-sm-4 px-3 m-1 steps">
                     <h6>STEP <span class="text-primary">1</span></h6>
                     <h3>利用申込</h3>
                     <img class="img-fluid my-3" src="../../images/signup.png">
                     <p class="text-left"><a class="text-decoration-none" data-toggle="modal" data-target="#applicationForm" href="#">利用申込</a>より利用登録をお願いします。</p>
                     <p class="text-left"><small class="text-muted">審査の結果、ご利用をお断りさせていただく場合もございます。</small></p>
                 </div>
-                <div class="col-lg-2 col-sm-3 px-3 m-1 steps">
+                <div class="col-lg-2 col-md-3 col-sm-4 px-3 m-1 steps">
                     <h6>STEP <span class="text-primary">2</span></h6>
                     <h3>閲覧</h3>
                     <img class="img-fluid my-3" src="../../images/look-into.png">
                     <p class="text-left">厳選されたグローバル人材をご覧ください。</p>
                 </div>
-                <div class="col-lg-2 col-sm-3 px-3 m-1 steps">
+                <div class="col-lg-2 col-md-3 col-sm-4 px-3 m-1 steps">
                     <h6>STEP <span class="text-primary">3</span></h6>
                     <h3>招待</h3>
                     <img class="img-fluid my-3" src="../../images/invite.png">
                     <p class="text-left">気になったら面会依頼を送りましょう。</p>
                     <p class="text-left"><small class="text-muted">「お気に入り」に追加して、会う前の質問・確認もできます。</small></p>
                 </div>
-                <div class="col-lg-2 col-sm-3 px-3 m-1 steps">
+                <div class="col-lg-2 col-md-3 col-sm-4 px-3 m-1 steps">
                     <h6>STEP <span class="text-primary">4</span></h6>
                     <h3>設定</h3>
                     <img class="img-fluid my-3" src="../../images/appointment.png">
                     <p class="text-left">専任CAが面会日時の設定を致します。</p>
                     <p class="text-left"><small class="text-muted">面会不可の場合、理由をフィードバック致します。</small></p>
                 </div>
-                <div class="col-lg-2 col-sm-3 px-3 m-1 steps">
+                <div class="col-lg-2 col-md-3 col-sm-4 px-3 m-1 steps">
                     <h6>STEP <span class="text-primary">5</span></h6>
                     <h3>面会</h3>
                     <img class="img-fluid my-3" src="../../images/meet.png">
@@ -309,7 +309,7 @@
         </div>
         </section>
         <section class="scenes">
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="text-center">活用シーン</h2>
             <h6 class="text-center pb-3">まず会うことから全ては始まる</h6>
             <div class="card-deck">
@@ -354,7 +354,7 @@
                 </div>
             </div> -->
         <section class="faq">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="justify-content-center row">
                     <div class="col-sm-10">
                     <nav class="accordion arrows">

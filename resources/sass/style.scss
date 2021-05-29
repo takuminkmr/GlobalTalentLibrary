@@ -1,6 +1,49 @@
 @import 'variables';
 @import 'mixin';
 
+@include screen-mobile-landscape {
+    h1,h2,.h1,.h2 {
+        font-size: 1.5rem;
+    }
+    h2,.h2 {
+        font-size: 1.2rem;
+    }
+    h3,h4,h5,.h3,.h4,.h5 {
+        font-size: 1rem;
+    }
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}
+@include screen-tablet-landscape {
+    h1,h2,.h1,.h2 {
+        font-size: 1.6rem;
+    }
+    h2,.h2 {
+        font-size: 1.4rem;
+    }
+    h3,h4,h5,.h3,.h4,.h5 {
+        font-size: 1.2rem;
+    }
+    .display-4 {
+        font-size: 2.4rem;
+    }
+}
+@include screen-laptop-landscape {
+    h1,h2,.h1,.h2 {
+        font-size: 1.8rem;
+    }
+    h2,.h2 {
+        font-size: 1.6rem;
+    }
+    h3,h4,h5,.h3,.h4,.h5 {
+        font-size: 1.4rem;
+    }
+    .display-4 {
+        font-size: 2.6rem;
+    }
+}
+
 button.opinion-btn {
     width: 6rem;
     height: 6rem;
@@ -37,17 +80,27 @@ h2.title-m-t {
 
 .pg-top {
     position: relative;
-
     .top-right {
         position: absolute;
         right: 30px;
-        top: 30px;
+        top: 50px;
         z-index: 1;
-
+        @include screen-landscape {
+            top: 30px;
+        }
         a {
             color: #FFF; 
-            padding: 0 25px;
-            font-size: 1.2em;
+            padding: 0 0.5rem;
+            font-size: 1.4rem;
+            @include screen-mobile-landscape {
+                font-size: 1rem;
+            }
+            @include screen-tablet-landscape {
+                font-size: 1.1rem;
+            }
+            @include screen-laptop-landscape {
+                font-size: 1.2rem;
+            }
         }
     }
     #applicationForm {     
@@ -63,55 +116,88 @@ h2.title-m-t {
             }
         }
     }
-
-
     .top-img {
         background-image: url(../../images/product-school-DL-yyYDDNX4-unsplash.jpg);
-        background-position: right;
+        background-position: 70%;
         background-size: cover; 
         width: 100%;
         position: relative;
-
         .ccp-en {
             position: absolute; 
-            bottom: 10rem; 
+            bottom: 10rem;
             left: 6rem; 
             font-family: sans-serif;
+            @include screen-mobile-landscape {
+                bottom: 4rem;
+                left: 2rem; 
+            }
+            @include screen-tablet-landscape {
+                bottom: 5rem;
+                left: 3rem; 
+            }
         }
-
         .ccp-ja {
             position: absolute; 
             bottom: 6rem; 
-            left: 6rem; 
+            left: 6rem;
+            @include screen-mobile-landscape {
+                bottom: 2rem;
+                left: 2rem; 
+            }
+            @include screen-tablet-landscape {
+                bottom: 3rem;
+                left: 3rem; 
+            }
         }
-
         .movetext1{
             opacity:0;
-
             span {
                 text-shadow: 1px 2px 3px #808080; 
                 font-size: 2rem; 
                 color: white;
                 opacity:0;
+                @include screen-mobile-landscape {
+                    font-size: 1rem;
+                }
+                @include screen-tablet-landscape {
+                    font-size: 1.1rem;
+                }
+                @include screen-laptop-landscape {
+                    font-size: 1.2rem;
+                }
             }
         }
         .movetext2{
             opacity:0;
-
             span {
                 text-shadow: 1px 2px 3px #808080; 
                 font-size: 3rem; 
                 color: white;
                 opacity:0;
+                @include screen-mobile-landscape {
+                    font-size: 2rem;
+                }
+                @include screen-tablet-landscape {
+                    font-size: 2.2rem;
+                }
+                @include screen-laptop-landscape {
+                    font-size: 2.4rem;
+                }
             }
         }
     }
-
     .what-is-gt {
         .row {
             position: relative;
         }
-
+        .descr {
+            @include screen-mobile {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-tablet {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+        }
         .impr {
             background: no-repeat url(what-is-gt-impr.png);
             height: 70vh;
@@ -119,30 +205,37 @@ h2.title-m-t {
             position: absolute;
             top: 0;
             right: 0;
-            @include screen-mobile {
-                width: 45%;
-            };
-            @include screen-tablet {
+            z-index: -1;
+            @include screen-mobile-portrait {
+                width: 70%;
+            }
+            @include screen-tablet-portrait {
+                width: 50%;
+            }
+            @include screen-laptop-portrait {
                 width: 42%;
-            };
-            @include screen-laptop {
-                width: 42%;
-            };
+            }
             @include screen-desktop {
-                width: 40%;
-            };
+                width: 36%;
+            }
             @include screen-hd {
-                width: 30%;
-            };
+                width: 27%;
+            }
+            @include screen-mobile-landscape {
+                width: 70%;
+                height: 110vh;
+            }
+            @include screen-tablet-landscape {
+                width: 65%;
+                height: 100vh;
+            }
         }
     }
 
     .meet-to-know {
-        
         .row {
             position: relative;
         }
-
         .impr {
             background: no-repeat url(meet-to-know-impr.png);
             height: 70vh;
@@ -150,14 +243,27 @@ h2.title-m-t {
             position: absolute;
             top: 0;
             left: 0;
+            @include screen-mobile-landscape {
+                width: 50%;
+                height: 130vh;
+            }
+            @include screen-tablet-landscape {
+                width: 50%;
+                height: 120vh;
+            }
         }
-
         .descr {
             .first {
                 padding-left: 16rem;
             }
             .second {
                 padding-left: 8rem;
+            }
+            @include screen-mobile {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-tablet {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
         }
     }
@@ -168,13 +274,17 @@ h2.title-m-t {
         }
         .row {
             margin-bottom: 5rem;
-
             .img {
                 margin-top: 8rem;
             }
             .intro {
                 margin-top: 12rem;
-
+                @include screen-mobile {
+                    margin-top: 2rem;
+                }
+                @include screen-tablet {
+                    margin-top: 2rem;
+                }
                 #gt-sample1 {
                     #modal-dialog-gt-sample1 {
                         max-width: 700px;
@@ -195,20 +305,30 @@ h2.title-m-t {
     }
 
     .service-flow {
-        .steps {
-            background-color: #fff; 
-            border-radius: 20px; 
-            text-align:center; 
-            padding-top: 2rem;
-
-            img {
-                height: 5rem;
+        .row {
+            max-width: 1800px;
+            margin: auto;
+            .steps {
+                background-color: #fff; 
+                border-radius: 20px; 
+                text-align:center; 
+                padding-top: 2rem;
+                @include screen-mobile {
+                    max-width: 315px;
+                }
+                img {
+                    height: 5rem;
+                }
             }
         }
     }
 
     .scenes {
         padding: 8rem 0;
+        .card-deck {
+            max-width: 1600px;
+            margin: auto;
+        }
     }
 
     .faq {
