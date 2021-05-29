@@ -149,7 +149,7 @@ h2.title-m-t {
             }
             @include screen-tablet-portrait {
                 padding: 0 1rem;
-                font-size: 2.8rem;
+                font-size: 2.4rem;
                 font-weight: 600;
             }
             @include screen-laptop-portrait {
@@ -281,12 +281,12 @@ h2.title-m-t {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
             .first {
-                @include screen-mobile-portrait {
+                @include screen-laptop-portrait {
                     padding-left: 5rem;
                 }
             }
             .third {
-                @include screen-mobile-portrait {
+                @include screen-laptop-portrait {
                     padding-right: 5rem;
                 }
             }
