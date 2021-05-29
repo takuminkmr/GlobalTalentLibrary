@@ -78,7 +78,7 @@
         font-size: 1.6rem;
     }
     .display-4 {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
     .btn {
         font-size: 2.4rem;
@@ -305,10 +305,11 @@ h2.title-m-t {
             }
             @include screen-mobile-portrait {
                 width: 70%;
+                height: 100vh;
             }
             @include screen-tablet-portrait {
                 width: 60%;
-                height: 100vh
+                height: 130vh
             }
             @include screen-laptop-portrait {
                 width: 42%;
@@ -334,6 +335,14 @@ h2.title-m-t {
             @include screen-tablet-landscape {
                 width: 50%;
                 height: 120vh;
+            }
+            @include screen-mobile-portrait {
+                width: 50%;
+                height: 130vh;
+            }
+            @include screen-tablet-portrait {
+                width: 50%;
+                height: 100vh;
             }
         }
         .descr {
