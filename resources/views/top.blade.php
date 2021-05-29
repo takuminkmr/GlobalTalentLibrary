@@ -153,9 +153,9 @@
                     <div class="col-lg-6 col-xl-7 offset-lg-2 offset-xl-2 descr">
                         <h2 class="text-center">Global Talentとは？</h2>
                         <h6 class="text-center pb-3">今の限界を打破する、未来の戦力</h6>
-                        <p class="py-3 pl-5"><span class="h1 text-primary pr-3">才能</span>国の代表として最高の教育を享受</p>
+                        <p class="py-3 pl-lg-3 pl-xl-5"><span class="h1 text-primary pr-3">才能</span>国の代表として最高の教育を享受</p>
                         <p class="py-3 second text-center"><span class="h1 text-primary pr-3">貪欲</span>現状に満足せず、挑戦し続けるタフさ</p>
-                        <p class="py-3 pr-5 text-right"><span class="h1 text-primary pr-3">知日</span>日本を知り、日本語を扱える</p>
+                        <p class="py-3 pr-lg-3 pr-xl-5 text-right"><span class="h1 text-primary pr-3">知日</span>日本を知り、日本語を扱える</p>
                     </div>
                     <div class="impr"></div>
                 </div>
@@ -165,7 +165,7 @@
             <div class="container-fluid">
                 <div class="row py-5">
                     <div class="impr"></div>
-                    <div class="col-md-8 offset-md-3 descr">
+                    <div class="col-md-10 offset-md-2 descr">
                         <h2 class="text-center">話せばわかる、その可能性</h2>
                         <h6 class="text-center pb-3">だから出会うための工夫を凝らす</h6>
                         <p class="py-3 first"><span class="h1 text-success pr-3">対話動画</span>どのレベルで会話が可能なのかが事前にわかる</p>
