@@ -13,7 +13,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) {
   h1, h2, .h1, .h2 {
     font-size: 1.6rem;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   h1, h2, .h1, .h2 {
     font-size: 1.8rem;
   }
@@ -259,7 +259,7 @@ h2.title-m-t {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -293,7 +293,7 @@ h2.title-m-t {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) {
   .pg-top .what-is-gt .impr {
     width: 36%;
   }
@@ -360,7 +360,7 @@ h2.title-m-t {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -388,7 +388,7 @@ h2.title-m-t {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
