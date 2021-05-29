@@ -76,13 +76,10 @@
     font-size: 1.6rem;
   }
   .display-4 {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
   .btn {
     font-size: 2.4rem;
-  }
-  section.box {
-    font-size: 1.6rem;
   }
 }
 
@@ -191,7 +188,7 @@ h2.title-m-t {
 }
 
 .pg-top #applicationForm #modal-dialog-appform {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .pg-top #applicationForm #modal-dialog-appform .form-check input {
@@ -419,14 +416,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 60%;
-    height: 300vh;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
-  .pg-top .what-is-gt .impr {
-    width: 42%;
-    height: 130vh;
+    height: 400vh;
   }
 }
 
@@ -467,7 +457,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .meet-to-know .impr {
     width: 50%;
-    height: 300vh;
+    height: 450vh;
   }
 }
 
@@ -610,7 +600,7 @@ h2.title-m-t {
 
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .faq .box {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -651,7 +641,7 @@ h2.title-m-t {
 
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .faq .box-content {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
