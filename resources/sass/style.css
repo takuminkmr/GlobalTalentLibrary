@@ -141,7 +141,7 @@ h2.title-m-t {
 
 @media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right {
-    top: 80px;
+    top: 60px;
   }
 }
 
@@ -174,7 +174,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
   }
 }
@@ -182,7 +182,7 @@ h2.title-m-t {
 @media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
     padding: 0 1rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 }
@@ -205,7 +205,7 @@ h2.title-m-t {
 
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top #applicationForm #modal-dialog-appform .form-check input {
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     margin-left: 1rem;
   }
 }
