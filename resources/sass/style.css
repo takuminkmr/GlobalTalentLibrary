@@ -31,9 +31,6 @@
   .btn {
     font-size: 1rem;
   }
-  section.box {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
@@ -422,7 +419,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 60%;
-    height: 200vh;
+    height: 300vh;
   }
 }
 
@@ -470,7 +467,7 @@ h2.title-m-t {
 @media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .meet-to-know .impr {
     width: 50%;
-    height: 100vh;
+    height: 300vh;
   }
 }
 
@@ -611,6 +608,12 @@ h2.title-m-t {
   transition: all .15s ease-in-out;
 }
 
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .faq .box {
+    font-size: 1rem;
+  }
+}
+
 .pg-top .faq .box::before {
   content: '';
   position: absolute;
@@ -644,6 +647,12 @@ h2.title-m-t {
   font-size: 11pt;
   color: rgba(0, 0, 0, 0.54);
   display: none;
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .faq .box-content {
+    font-size: 1rem;
+  }
 }
 
 .pg-top .faq .box-close {
