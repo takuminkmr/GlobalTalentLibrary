@@ -280,12 +280,12 @@ h2.title-m-t {
             }
             .first {
                 @include screen-mobile-portrait {
-                    padding-left: 0;
+                    padding-left: 5rem;
                 }
             }
             .third {
                 @include screen-mobile-portrait {
-                    padding-right: 0;
+                    padding-right: 5rem;
                 }
             }
         }
@@ -319,7 +319,7 @@ h2.title-m-t {
             }
             @include screen-tablet-portrait {
                 width: 60%;
-                height: 130vh
+                height: 200vh
             }
             @include screen-laptop-portrait {
                 width: 42%;
