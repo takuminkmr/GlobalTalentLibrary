@@ -87,6 +87,20 @@
         font-size: 2.4rem;
     }
 }
+@include screen-laptop-portrait {
+    h1,.h1 {
+        font-size: 1.8rem;
+    }
+    h2,.h2 {
+        font-size: 1.6rem;
+    }
+    h3,h4,h5,h6,p.h3,.h4,.h5 {
+        font-size: 1.4rem;
+    }
+    .display-4 {
+        font-size: 2.4rem;
+    }
+}
 
 button.opinion-btn {
     width: 6rem;
@@ -135,11 +149,19 @@ h2.title-m-t {
         @include screen-tablet-portrait {
             top: 80px;
         }
+        @include screen-laptop-portrait {
+            top: 80px;
+        }
         a {
             color: #FFF; 
             padding: 0 0.5rem;
             font-size: 1.4rem;
             @include screen-tablet-portrait {
+                padding: 0 1rem;
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+            @include screen-laptop-portrait {
                 padding: 0 1rem;
                 font-size: 1.8rem;
                 font-weight: 600;
@@ -210,9 +232,6 @@ h2.title-m-t {
                 font-size: 2rem; 
                 color: white;
                 opacity:0;
-                @include screen-tablet-portrait {
-                    font-size: 2.2rem;
-                }
                 @include screen-mobile-landscape {
                     font-size: 1rem;
                 }
@@ -221,6 +240,12 @@ h2.title-m-t {
                 }
                 @include screen-laptop-landscape {
                     font-size: 1.2rem;
+                }
+                @include screen-tablet-portrait {
+                    font-size: 2.2rem;
+                }
+                @include screen-laptop-portrait {
+                    font-size: 2.2rem;
                 }
             }
         }
@@ -231,9 +256,6 @@ h2.title-m-t {
                 font-size: 3rem; 
                 color: white;
                 opacity:0;
-                @include screen-tablet-portrait {
-                    font-size: 3.6rem;
-                }
                 @include screen-mobile-landscape {
                     font-size: 2rem;
                 }
@@ -243,6 +265,12 @@ h2.title-m-t {
                 @include screen-laptop-landscape {
                     font-size: 2.4rem;
                 }
+                @include screen-tablet-portrait {
+                    font-size: 3.6rem;
+                }
+                @include screen-laptop-portrait {
+                    font-size: 3.6rem;
+                }
             }
         }
     }
@@ -251,10 +279,16 @@ h2.title-m-t {
             position: relative;
         }
         .descr {
-            @include screen-mobile {
+            @include screen-mobile-landscape {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
-            @include screen-tablet {
+            @include screen-tablet-landscape {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-mobile-portrait {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-tablet-portrait {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
         }
@@ -266,6 +300,22 @@ h2.title-m-t {
             top: 0;
             right: 0;
             z-index: -1;
+            @include screen-mobile-landscape {
+                width: 70%;
+                height: 110vh;
+            }
+            @include screen-tablet-landscape {
+                width: 65%;
+                height: 100vh;
+            }
+            @include screen-desktop-landscape {
+                width: 36%;
+                height: 100vh;
+            }
+            @include screen-hd-landscape {
+                width: 27%;
+                height: 100vh;
+            }
             @include screen-mobile-portrait {
                 width: 70%;
             }
@@ -274,20 +324,6 @@ h2.title-m-t {
             }
             @include screen-laptop-portrait {
                 width: 42%;
-            }
-            @include screen-desktop {
-                width: 36%;
-            }
-            @include screen-hd {
-                width: 27%;
-            }
-            @include screen-mobile-landscape {
-                width: 70%;
-                height: 110vh;
-            }
-            @include screen-tablet-landscape {
-                width: 65%;
-                height: 100vh;
             }
         }
     }
@@ -319,10 +355,16 @@ h2.title-m-t {
             .second {
                 padding-left: 8rem;
             }
-            @include screen-mobile {
+            @include screen-mobile-landscape {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
-            @include screen-tablet {
+            @include screen-tablet-landscape {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-mobile-portrait {
+                text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
+            }
+            @include screen-tablet-portrait {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
         }
@@ -339,10 +381,16 @@ h2.title-m-t {
             }
             .intro {
                 margin-top: 12rem;
-                @include screen-mobile {
+                @include screen-mobile-landscape {
                     margin-top: 2rem;
                 }
-                @include screen-tablet {
+                @include screen-tablet-landscape {
+                    margin-top: 2rem;
+                }
+                @include screen-mobile-portrait {
+                    margin-top: 2rem;
+                }
+                @include screen-tablet-portrait {
                     margin-top: 2rem;
                 }
                 #gt-sample1 {
@@ -373,7 +421,10 @@ h2.title-m-t {
                 border-radius: 20px; 
                 text-align:center; 
                 padding-top: 2rem;
-                @include screen-mobile {
+                @include screen-tablet-landscape {
+                    max-width: 315px;
+                }
+                @include screen-tablet-portrait {
                     max-width: 315px;
                 }
                 img {
