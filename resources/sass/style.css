@@ -107,7 +107,7 @@ h2.title-m-t {
 
 @media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
   }
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   h1,
   h2,
   .h1,
@@ -27,7 +27,7 @@
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   h1,
   h2,
   .h1,
@@ -54,7 +54,7 @@
   }
 }
 
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   h1,
   h2,
   .h1,
@@ -93,6 +93,12 @@ button.opinion-btn {
   height: 100vh;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-resolution: 2dppx) and (orientation: portrait) {
+  .full-height {
+    height: 70vh;
+  }
+}
+
 h2.title {
   margin: 50px 0;
   text-align: center;
@@ -126,7 +132,7 @@ h2.title-m-t {
   z-index: 1;
 }
 
-@media (orientation: landscape) {
+@media (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right {
     top: 30px;
   }
@@ -138,21 +144,30 @@ h2.title-m-t {
   font-size: 1.4rem;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .top-right a {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1.1rem;
+    font-weight: 600;
   }
 }
 
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1.2rem;
+    font-weight: 600;
   }
 }
 
@@ -181,14 +196,14 @@ h2.title-m-t {
   font-family: sans-serif;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-en {
     bottom: 4rem;
     left: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-en {
     bottom: 5rem;
     left: 3rem;
@@ -201,14 +216,14 @@ h2.title-m-t {
   left: 6rem;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-ja {
     bottom: 2rem;
     left: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-ja {
     bottom: 3rem;
     left: 3rem;
@@ -226,19 +241,19 @@ h2.title-m-t {
   opacity: 0;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1.1rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1.2rem;
   }
@@ -255,19 +270,19 @@ h2.title-m-t {
   opacity: 0;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2.4rem;
   }
@@ -277,13 +292,13 @@ h2.title-m-t {
   position: relative;
 }
 
-@media screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -299,44 +314,44 @@ h2.title-m-t {
   z-index: -1;
 }
 
-@media (orientation: portrait) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 70%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 50%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 42%;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pg-top .what-is-gt .impr {
     width: 36%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .pg-top .what-is-gt .impr {
     width: 27%;
   }
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .what-is-gt .impr {
     width: 70%;
     height: 110vh;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .what-is-gt .impr {
     width: 65%;
     height: 100vh;
@@ -356,14 +371,14 @@ h2.title-m-t {
   left: 0;
 }
 
-@media (orientation: landscape) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .meet-to-know .impr {
     width: 50%;
     height: 130vh;
   }
 }
 
-@media (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .meet-to-know .impr {
     width: 50%;
     height: 120vh;
@@ -378,13 +393,13 @@ h2.title-m-t {
   padding-left: 8rem;
 }
 
-@media screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -406,13 +421,13 @@ h2.title-m-t {
   margin-top: 12rem;
 }
 
-@media screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
@@ -442,7 +457,7 @@ h2.title-m-t {
   padding-top: 2rem;
 }
 
-@media screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .pg-top .service-flow .row .steps {
     max-width: 315px;
   }
