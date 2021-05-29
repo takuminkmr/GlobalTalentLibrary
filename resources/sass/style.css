@@ -1,45 +1,45 @@
-@media only screen and (max-width: 575px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   h1, .h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   h2, .h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
-  h3, h4, h5, .h3, .h4, .h5 {
-    font-size: 1rem;
-  }
-  .display-4 {
-    font-size: 2.2rem;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  h1, .h1 {
+  h3, h4, h5, h6, p, .h3, .h4, .h5 {
     font-size: 1.6rem;
-  }
-  h2, .h2 {
-    font-size: 1.4rem;
-  }
-  h3, h4, h5, .h3, .h4, .h5 {
-    font-size: 1.2rem;
   }
   .display-4 {
     font-size: 2.4rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+  h1, .h1 {
+    font-size: 1.6rem;
+  }
+  h2, .h2 {
+    font-size: 1.4rem;
+  }
+  h3, h4, h5, h6, p, .h3, .h4, .h5 {
+    font-size: 1.2rem;
+  }
+  .display-4 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   h1, .h1 {
     font-size: 1.8rem;
   }
   h2, .h2 {
     font-size: 1.6rem;
   }
-  h3, h4, h5, .h3, .h4, .h5 {
+  h3, h4, h5, h6, p.h3, .h4, .h5 {
     font-size: 1.4rem;
   }
   .display-4 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -52,7 +52,7 @@ button.opinion-btn {
 }
 
 .full-height {
-  height: 80vh;
+  height: 100vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-resolution: 2dppx) and (orientation: portrait) {
@@ -253,13 +253,13 @@ h2.title-m-t {
   position: relative;
 }
 
-@media only screen and (max-width: 575px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -293,13 +293,13 @@ h2.title-m-t {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), (min-resolution: 2dppx) and (min-width: 992px) {
   .pg-top .what-is-gt .impr {
     width: 36%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .pg-top .what-is-gt .impr {
     width: 27%;
   }
@@ -354,13 +354,13 @@ h2.title-m-t {
   padding-left: 8rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -382,13 +382,13 @@ h2.title-m-t {
   margin-top: 12rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
@@ -418,7 +418,7 @@ h2.title-m-t {
   padding-top: 2rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
   .pg-top .service-flow .row .steps {
     max-width: 315px;
   }

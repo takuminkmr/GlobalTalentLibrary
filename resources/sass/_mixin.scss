@@ -1,92 +1,32 @@
 @import 'variables';
-
-// 通常のメディアクエリ
+// 高解像度ディスプレイを基本としたデバイス用メディアクエリ
 @mixin screen-hd {
-  @media only screen and (min-width: $hd-min) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $hd-min),
+  (min-resolution: 2dppx) and (min-width: $hd-min) {
     @content;
   }
 }
 @mixin screen-desktop {
-  @media only screen and (min-width: $desktop-min) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $desktop-min),
+  (min-resolution: 2dppx) and (min-width: $desktop-min) {
     @content;
   }
 }
 @mixin screen-laptop {
-  @media only screen and (min-width: $laptop-min) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $laptop-min),
+  (min-resolution: 2dppx) and (min-width: $laptop-min) {
     @content;
   }
 }
 @mixin screen-tablet {
-  @media only screen and (min-width: $tablet-min) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $tablet-min),
+  (min-resolution: 2dppx) and (min-width: $tablet-min) {
     @content;
   }
 }
 @mixin screen-mobile {
-  @media only screen and (max-width: $mobile-max) {
-    @content;
-  }
-}
-
-// 通常のメディアクエリ用（縦向き）
-@mixin nrm-screen-portrait {
-  @media only screen and (orientation: $portrait) {
-    @content;
-  }
-}
-@mixin nrm-screen-hd-portrait {
-  @media only screen and (min-width: $hd-min) and (orientation: $portrait) {
-    @content;
-  }
-}
-@mixin nrm-screen-desktop-portrait {
-  @media only screen and (min-width: $desktop-min) and (orientation: $portrait) {
-    @content;
-  }
-}
-@mixin nrm-screen-laptop-portrait {
-  @media only screen and (min-width: $laptop-min) and (orientation: $portrait) {
-    @content;
-  }
-}
-@mixin nrm-screen-tablet-portrait {
-  @media only screen and (min-width: $tablet-min) and (orientation: $portrait) {
-    @content;
-  }
-}
-@mixin nrm-screen-mobile-portrait {
-  @media only screen and (max-width: $mobile-max) and (orientation: $portrait) {
-    @content;
-  }
-}
-
-// 通常のメディアクエリ用（横向き）
-@mixin nrm-screen-landscape {
-  @media only screen and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-hd-landscape {
-  @media only screen and (min-width: $hd-min) and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-desktop-landscape {
-  @media only screen and (min-width: $desktop-min) and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-laptop-landscape {
-  @media only screen and (min-width: $laptop-min) and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-tablet-landscape {
-  @media only screen and (min-width: $tablet-min) and (orientation: $landscape) {
-    @content;
-  }
-}
-@mixin nrm-screen-mobile-landscape {
-  @media only screen and (max-width: $mobile-max) and (orientation: $landscape) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (max-width: $mobile-max),
+  (min-resolution: 2dppx) and (max-width: $mobile-max) {
     @content;
   }
 }
@@ -163,6 +103,97 @@
 @mixin screen-mobile-landscape {
   @media (max-width: $mobile-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
   (max-width: $mobile-max) and (min-resolution: 2dppx) and (orientation: $landscape) {
+    @content;
+  }
+}
+
+// 通常のメディアクエリ
+@mixin nrm-screen-hd {
+  @media only screen and (min-width: $hd-min) {
+    @content;
+  }
+}
+@mixin nrm-screen-desktop {
+  @media only screen and (min-width: $desktop-min) {
+    @content;
+  }
+}
+@mixin nrm-screen-laptop {
+  @media only screen and (min-width: $laptop-min) {
+    @content;
+  }
+}
+@mixin nrm-screen-tablet {
+  @media only screen and (min-width: $tablet-min) {
+    @content;
+  }
+}
+@mixin nrm-screen-mobile {
+  @media only screen and (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+// 通常のメディアクエリ用（縦向き）
+@mixin nrm-screen-portrait {
+  @media only screen and (orientation: $portrait) {
+    @content;
+  }
+}
+@mixin nrm-screen-hd-portrait {
+  @media only screen and (min-width: $hd-min) and (orientation: $portrait) {
+    @content;
+  }
+}
+@mixin nrm-screen-desktop-portrait {
+  @media only screen and (min-width: $desktop-min) and (orientation: $portrait) {
+    @content;
+  }
+}
+@mixin nrm-screen-laptop-portrait {
+  @media only screen and (min-width: $laptop-min) and (orientation: $portrait) {
+    @content;
+  }
+}
+@mixin nrm-screen-tablet-portrait {
+  @media only screen and (min-width: $tablet-min) and (orientation: $portrait) {
+    @content;
+  }
+}
+@mixin nrm-screen-mobile-portrait {
+  @media only screen and (max-width: $mobile-max) and (orientation: $portrait) {
+    @content;
+  }
+}
+
+// 通常のメディアクエリ用（横向き）
+@mixin nrm-screen-landscape {
+  @media only screen and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin nrm-screen-hd-landscape {
+  @media only screen and (min-width: $hd-min) and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin nrm-screen-desktop-landscape {
+  @media only screen and (min-width: $desktop-min) and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin nrm-screen-laptop-landscape {
+  @media only screen and (min-width: $laptop-min) and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin nrm-screen-tablet-landscape {
+  @media only screen and (min-width: $tablet-min) and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin nrm-screen-mobile-landscape {
+  @media only screen and (max-width: $mobile-max) and (orientation: $landscape) {
     @content;
   }
 }

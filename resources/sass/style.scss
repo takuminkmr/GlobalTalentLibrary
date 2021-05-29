@@ -3,16 +3,16 @@
 
 @include screen-mobile {
     h1,.h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2,.h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
-    h3,h4,h5,.h3,.h4,.h5 {
-        font-size: 1rem;
+    h3,h4,h5,h6,p,.h3,.h4,.h5 {
+        font-size: 1.6rem;
     }
     .display-4 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 }
 @include screen-tablet {
@@ -22,25 +22,25 @@
     h2,.h2 {
         font-size: 1.4rem;
     }
-    h3,h4,h5,.h3,.h4,.h5 {
+    h3,h4,h5,h6,p,.h3,.h4,.h5 {
         font-size: 1.2rem;
     }
     .display-4 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }
 @include screen-laptop {
-    h1, .h1 {
+    h1,.h1 {
         font-size: 1.8rem;
     }
     h2,.h2 {
         font-size: 1.6rem;
     }
-    h3,h4,h5,.h3,.h4,.h5 {
+    h3,h4,h5,h6,p.h3,.h4,.h5 {
         font-size: 1.4rem;
     }
     .display-4 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -53,7 +53,7 @@ button.opinion-btn {
 }
 
 .full-height {
-    height: 80vh;
+    height: 100vh;
     @include screen-portrait {
         height: 70vh;
     }
