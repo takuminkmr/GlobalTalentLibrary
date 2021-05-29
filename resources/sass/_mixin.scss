@@ -1,36 +1,4 @@
 @import 'variables';
-// 高解像度ディスプレイを基本としたデバイス用メディアクエリ
-@mixin screen-hd {
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $hd-min),
-  (min-resolution: 2dppx) and (min-width: $hd-min) {
-    @content;
-  }
-}
-@mixin screen-desktop {
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $desktop-min),
-  (min-resolution: 2dppx) and (min-width: $desktop-min) {
-    @content;
-  }
-}
-@mixin screen-laptop {
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $laptop-min),
-  (min-resolution: 2dppx) and (min-width: $laptop-min) {
-    @content;
-  }
-}
-@mixin screen-tablet {
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $tablet-min),
-  (min-resolution: 2dppx) and (min-width: $tablet-min) {
-    @content;
-  }
-}
-@mixin screen-mobile {
-  @media (-webkit-min-device-pixel-ratio: 2) and (max-width: $mobile-max),
-  (min-resolution: 2dppx) and (max-width: $mobile-max) {
-    @content;
-  }
-}
-
 // 高解像度ディスプレイを基本としたデバイス用（縦向き）
 @mixin screen-portrait {
   @media (-webkit-min-device-pixel-ratio: 2) and (orientation: $portrait),
@@ -70,6 +38,18 @@
 }
 
 // 高解像度ディスプレイを基本としたデバイス用（横向き）
+@mixin screen-landscape {
+  @media (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
+  (min-resolution: 2dppx) and (orientation: $landscape) {
+    @content;
+  }
+}
+@mixin screen-hd-landscape {
+  @media (min-width: $hd-min) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
+  (min-width: $hd-min) and (min-resolution: 2dppx) and (orientation: $landscape) {
+    @content;
+  }
+}
 @mixin screen-desktop-landscape {
   @media (min-width: $desktop-min) and (max-width: $desktop-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $landscape),
   (min-width: $desktop-min) and (max-width: $desktop-max) and (min-resolution: 2dppx) and (orientation: $landscape) {

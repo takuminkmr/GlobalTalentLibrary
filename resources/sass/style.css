@@ -1,4 +1,4 @@
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   h1, .h1 {
     font-size: 2.6rem;
     font-weight: 600;
@@ -30,7 +30,7 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   h1, .h1 {
     font-size: 3.6rem;
     font-weight: 600;
@@ -74,7 +74,7 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
   h1, .h1 {
     font-size: 1.8rem;
   }
@@ -159,20 +159,20 @@ h2.title-m-t {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1.1rem;
     font-weight: 600;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-right a {
     font-size: 1.2rem;
     font-weight: 600;
@@ -204,14 +204,14 @@ h2.title-m-t {
   font-family: sans-serif;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-en {
     bottom: 4rem;
     left: 2rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-en {
     bottom: 5rem;
     left: 3rem;
@@ -224,14 +224,14 @@ h2.title-m-t {
   left: 6rem;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-ja {
     bottom: 2rem;
     left: 2rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .ccp-ja {
     bottom: 3rem;
     left: 3rem;
@@ -255,19 +255,19 @@ h2.title-m-t {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1.1rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext1 span {
     font-size: 1.2rem;
   }
@@ -290,19 +290,19 @@ h2.title-m-t {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 575px), (min-resolution: 2dppx) and (max-width: 575px) {
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 576px), (min-resolution: 2dppx) and (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2.2rem;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: landscape) {
   .pg-top .top-img .movetext2 span {
     font-size: 2.4rem;
   }
