@@ -150,7 +150,7 @@
         <section class="what-is-gt">
             <div class="container-fluid">
                 <div class="row py-5">
-                    <div class="col-md-9 col-lg-8 col-xl-7 offset-lg-1 offset-xl-2 descr">
+                    <div class="col-md-9 col-lg-8 col-xl-7 offset-xl-2 descr">
                         <h2 class="text-center">Global Talentとは？</h2>
                         <h6 class="text-center pb-3">今の限界を打破する、未来の戦力</h6>
                         <p class="py-3 pl-md-3 pl-xl-5"><span class="h1 text-primary pr-3">才能</span>国の代表として最高の教育を享受</p>
