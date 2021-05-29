@@ -278,6 +278,16 @@ h2.title-m-t {
             @include screen-tablet-portrait {
                 text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
             }
+            .first {
+                @include screen-mobile-portrait {
+                    padding-left: 0;
+                }
+            }
+            .third {
+                @include screen-mobile-portrait {
+                    padding-right: 0;
+                }
+            }
         }
         .impr {
             background: no-repeat url(what-is-gt-impr.png);
@@ -313,6 +323,7 @@ h2.title-m-t {
             }
             @include screen-laptop-portrait {
                 width: 42%;
+                height: 130vh
             }
         }
     }

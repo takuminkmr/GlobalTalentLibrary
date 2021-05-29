@@ -362,6 +362,18 @@ h2.title-m-t {
   }
 }
 
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .what-is-gt .descr .first {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 575px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (max-width: 575px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top .what-is-gt .descr .third {
+    padding-right: 0;
+  }
+}
+
 .pg-top .what-is-gt .impr {
   background: no-repeat url(what-is-gt-impr.png);
   height: 70vh;
@@ -417,6 +429,7 @@ h2.title-m-t {
 @media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 42%;
+    height: 130vh;
   }
 }
 
