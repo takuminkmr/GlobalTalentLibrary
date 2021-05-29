@@ -82,7 +82,6 @@
     }
 }
 
-
 button.opinion-btn {
     width: 6rem;
     height: 6rem;
@@ -150,12 +149,12 @@ h2.title-m-t {
             }
             @include screen-tablet-portrait {
                 padding: 0 1rem;
-                font-size: 2.2rem;
+                font-size: 2.4rem;
                 font-weight: 600;
             }
             @include screen-laptop-portrait {
                 padding: 0 1rem;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-weight: 600;
             }
         }
@@ -380,6 +379,9 @@ h2.title-m-t {
     .gt-sample {
         h2 {
             margin-top: 8rem;
+            @include screen-laptop-portrait {
+                margin-bottom: 6rem;
+            }
         }
         .row {
             margin-bottom: 5rem;
@@ -399,6 +401,9 @@ h2.title-m-t {
                 }
                 @include screen-tablet-portrait {
                     margin-top: 2rem;
+                }
+                @include screen-laptop-portrait {
+                    margin-top: 10rem;
                 }
                 #gt-sample1 {
                     #modal-dialog-gt-sample1 {
