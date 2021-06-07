@@ -127,6 +127,7 @@
                                 <input id="00N2u000000SqEl" name="00N2u000000SqEl" type="checkbox" value="1" required>    
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">送信する</button>
+                            <p class="text-right"><small>弊社サービス紹介も是非ご覧ください！</small></p>
                         </form>
                     </div>
                 </div>
