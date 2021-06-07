@@ -69,7 +69,7 @@
                         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="h-adr">
                         @csrf
                         <input type="hidden" name="oid" value="00D2v000001Xv2Z">
-                        <input type="hidden" name="retURL" value="{{ route('thanks') }}">
+                        <input type="hidden" name="retURL" value="https://sociarise.co.jp/service-guide/">
                         <input type="hidden" id="lead_source" name="lead_source" value="Web">
                         <input type="hidden" id="rating" name="rating" value="Warm">
                         <input type="hidden" id="00N2u000000SqF0" name="00N2u000000SqF0" title="問い合わせ種別" value="Global Talent Library">
@@ -77,21 +77,11 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="company">会社名</label>
-                                    <input type="text" maxlength="40" size="20" class="form-control" id="company" name="Company" value="" required>
-                                    @error('company')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                    <input type="text" maxlength="40" size="20" class="form-control" id="company" name="company" value="" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="title">役職</label>
                                     <input type="text" maxlength="40" size="20" class="form-control" id="title" name="title" value="" >
-                                    @error('title')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
                                 </div>
                             </div>
                             <div class="form-row">
@@ -111,7 +101,7 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                 <label for="phone">電話番号</label>
-                                <input type="tel" maxlength="40" size="20" class="form-control" id="phone" name="phone" value="" required>
+                                <input type="tel" minlength="10" maxlength="17" size="20" class="form-control" id="phone" name="phone" value="" required>
                                 </div>
                             </div>
                             <div class="form-row">
