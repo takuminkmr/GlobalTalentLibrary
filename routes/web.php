@@ -18,21 +18,31 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
+Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
+
+Route::post('/login/admin', 'Auth\LoginController@adminLogin');
+Route::post('/register/admin', 'Auth\RegisterController@createAdmin')->name('admin-register');
+
+// Route::view('/admin', 'admin')->middleware('auth:admin')->name('admin-home');
+
 Route::get('/thanks', 'HomeController@thanks')->name('thanks');
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 Route::get('/apply/{id}', 'ApplyController@show')->name('apply');
 Route::post('/complete', 'ApplyController@complete')->name('complete');
 Route::get('/{id}/interest', 'InterestController@index')->name('interest');
 Route::post('/interest/add', 'InterestController@add')->name('interest.add');
+Route::post('/interest/destroy', 'InterestController@destroy')->name('interest.destroy');
 Route::get('/{id}/history', 'HistoryController@index')->name('history');
-Route::get('/{id}/profile', 'ProfileController@index')->name('profile');
-Route::get('/{id}/edit', 'EditController@index')->name('edit');
-Route::get('/{id}/confirm', 'ConfirmController@index')->name('confirm');
+// Route::get('/{id}/profile', 'ProfileController@index')->name('profile');
+// Route::get('/{id}/edit', 'EditController@index')->name('edit');
+// Route::get('/{id}/confirm', 'ConfirmController@index')->name('confirm');
 Route::get('/opinion', 'OpinionController@index')->name('opinion');
 Route::post('/opinion/add', 'OpinionController@add')->name('opinion.add');
 Route::post('/opinion/todo', 'OpinionController@todo')->name('opinion.todo');
 
-Route::group(['prefix' => 'gt', 'middleware' => 'auth'], function(){
+Route::group(['prefix' => 'gt', 'middleware' => 'auth:admin'], function () {
     Route::get('index', 'GtController@index')->name('gt.index');
     Route::get('create', 'GtController@create')->name('gt.create');
     Route::post('store', 'GtController@store')->name('gt.store');
@@ -40,4 +50,10 @@ Route::group(['prefix' => 'gt', 'middleware' => 'auth'], function(){
     Route::get('edit/{id}', 'GtController@edit')->name('gt.edit');
     Route::post('update/{id}', 'GtController@update')->name('gt.update');
     Route::post('destroy/{id}', 'GtController@destroy')->name('gt.destroy');
+});
+
+Route::group(['prefix' => 'userProfile'], function () {
+    Route::get('show/{id}', 'UserProfileController@show')->name('userProfile.show');
+    Route::get('edit/{id}', 'UserProfileController@edit')->name('userProfile.edit');
+    Route::post('update/{id}', 'UserProfileController@update')->name('userProfile.update');
 });

@@ -18,7 +18,7 @@ class GtController extends Controller
     {   
         $global_talents = GlobalTalent::orderBy("id", "desc")->get();
 
-        return view('gt.index', compact('global_talents'));
+        return view('gt.index', ['authgroup' => 'admin'], compact('global_talents'));
     }
 
     /**
@@ -28,7 +28,7 @@ class GtController extends Controller
      */
     public function create()
     {
-        return view('gt.create');
+        return view('gt.create', ['authgroup' => 'admin']);
     }
 
     /**
@@ -78,7 +78,7 @@ class GtController extends Controller
     {
         $global_talent = GlobalTalent::find($id);
 
-        return view('gt.show', compact('global_talent'));
+        return view('gt.show', ['authgroup' => 'admin'], compact('global_talent'));
     }
 
     /**
@@ -91,7 +91,7 @@ class GtController extends Controller
     {
         $global_talent = GlobalTalent::find($id);
 
-        return view('gt.edit', compact('global_talent'));
+        return view('gt.edit', ['authgroup' => 'admin'], compact('global_talent'));
     }
 
     /**

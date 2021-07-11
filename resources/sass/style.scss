@@ -82,6 +82,12 @@
     }
 }
 
+.card-box::after{
+  content:"";
+  display: block;
+  width:30%;
+}
+
 button.opinion-btn {
     width: 6rem;
     height: 6rem;
@@ -114,6 +120,30 @@ h2.title-m-t {
             color: #333;
             h5,h6 {
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+.pg-top, .login-top {
+    #applicationForm {     
+        #modal-dialog-appform {
+            max-width: 800px;
+            .modal-body {
+                @include screen-tablet-portrait {
+                    font-size: 1.6rem;
+                }
+            }
+            .form-check {
+                input {
+                    position: absolute; 
+                    margin-top: 0.3rem; 
+                    margin-left: 0.3rem;
+                    @include screen-tablet-portrait {
+                        margin-top: 0.9rem; 
+                        margin-left: 1rem;
+                    }
+                }
             }
         }
     }
@@ -156,28 +186,6 @@ h2.title-m-t {
                 padding: 0 1rem;
                 font-size: 1.8rem;
                 font-weight: 600;
-            }
-        }
-    }
-    #applicationForm {     
-        #modal-dialog-appform {
-            max-width: 800px;
-            .modal-body {
-                @include screen-tablet-portrait {
-                    font-size: 1.6rem;
-                }
-            }
-
-            .form-check {
-                input {
-                    position: absolute; 
-                    margin-top: 0.3rem; 
-                    margin-left: 0.3rem;
-                    @include screen-tablet-portrait {
-                        margin-top: 0.9rem; 
-                        margin-left: 1rem;
-                    }
-                }
             }
         }
     }
@@ -584,7 +592,7 @@ h2.title-m-t {
     .wrap {
         align-items: center;
         margin-top: 30px;
-        @include iframe
+        @include iframe-gt-clip
     }
     h4 {
         margin-bottom: 20px;
@@ -676,5 +684,5 @@ h2.title-m-t {
 
 .gt-show {
     margin: 50px auto;
-    @include iframe
+    @include iframe-gt-clip
 }

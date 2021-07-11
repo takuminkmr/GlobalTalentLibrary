@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   h1, .h1 {
     font-size: 3.2rem;
     font-weight: 600;
@@ -81,6 +81,12 @@
   .btn {
     font-size: 2.4rem;
   }
+}
+
+.card-box::after {
+  content: "";
+  display: block;
+  width: 30%;
 }
 
 button.opinion-btn {
@@ -122,6 +128,29 @@ h2.title-m-t {
   font-weight: 600;
 }
 
+.pg-top #applicationForm #modal-dialog-appform, .login-top #applicationForm #modal-dialog-appform {
+  max-width: 800px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top #applicationForm #modal-dialog-appform .modal-body, .login-top #applicationForm #modal-dialog-appform .modal-body {
+    font-size: 1.6rem;
+  }
+}
+
+.pg-top #applicationForm #modal-dialog-appform .form-check input, .login-top #applicationForm #modal-dialog-appform .form-check input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
+  .pg-top #applicationForm #modal-dialog-appform .form-check input, .login-top #applicationForm #modal-dialog-appform .form-check input {
+    margin-top: 0.9rem;
+    margin-left: 1rem;
+  }
+}
+
 .pg-top {
   position: relative;
 }
@@ -133,13 +162,13 @@ h2.title-m-t {
   z-index: 1;
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right {
     top: 80px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right {
     top: 60px;
   }
@@ -171,7 +200,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
     padding: 0 1rem;
     font-size: 2.4rem;
@@ -179,34 +208,11 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-right a {
     padding: 0 1rem;
     font-size: 1.8rem;
     font-weight: 600;
-  }
-}
-
-.pg-top #applicationForm #modal-dialog-appform {
-  max-width: 800px;
-}
-
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
-  .pg-top #applicationForm #modal-dialog-appform .modal-body {
-    font-size: 1.6rem;
-  }
-}
-
-.pg-top #applicationForm #modal-dialog-appform .form-check input {
-  position: absolute;
-  margin-top: 0.3rem;
-  margin-left: 0.3rem;
-}
-
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
-  .pg-top #applicationForm #modal-dialog-appform .form-check input {
-    margin-top: 0.9rem;
-    margin-left: 1rem;
   }
 }
 
@@ -288,13 +294,13 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-img .movetext1 span {
     font-size: 2.2rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-img .movetext1 span {
     font-size: 2.2rem;
   }
@@ -329,13 +335,13 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-img .movetext2 span {
     font-size: 3.6rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .top-img .movetext2 span {
     font-size: 3.6rem;
   }
@@ -363,7 +369,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -414,7 +420,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .what-is-gt .impr {
     width: 40%;
     height: 200vh;
@@ -455,7 +461,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .meet-to-know .impr {
     width: 50%;
     height: 300vh;
@@ -488,7 +494,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .meet-to-know .descr {
     text-shadow: 1px 2px 3px #FFF, -1px 2px 3px #FFF, 1px -2px 3px #FFF, -1px -2px 3px #FFF;
   }
@@ -498,7 +504,7 @@ h2.title-m-t {
   margin-top: 8rem;
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .gt-sample h2 {
     margin-bottom: 6rem;
   }
@@ -540,13 +546,13 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .gt-sample .row .intro {
     margin-top: 2rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 768px) and (max-width: 991px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .gt-sample .row .intro {
     margin-top: 6rem;
   }
@@ -582,7 +588,7 @@ h2.title-m-t {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .service-flow .row .steps {
     max-width: 315px;
   }
@@ -617,7 +623,7 @@ h2.title-m-t {
   transition: all .15s ease-in-out;
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .faq .box {
     font-size: 1.6rem;
   }
@@ -658,7 +664,7 @@ h2.title-m-t {
   display: none;
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (min-resolution: 2dppx) and (orientation: portrait) {
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), (min-width: 576px) and (max-width: 767px) and (min-resolution: 2dppx) and (orientation: portrait) {
   .pg-top .faq .box-content {
     font-size: 1.6rem;
   }

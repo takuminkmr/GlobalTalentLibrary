@@ -14,19 +14,19 @@
 }
 @mixin screen-tablet-portrait {
   @media (min-width: $tablet-min) and (max-width: $tablet-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $portrait),
-  (min-width: $tablet-min) and (min-resolution: 2dppx) and (orientation: $portrait) {
+  (min-width: $tablet-min) and (max-width: $tablet-max) and (min-resolution: 2dppx) and (orientation: $portrait) {
     @content;
   }
 }
 @mixin screen-laptop-portrait {
   @media (min-width: $laptop-min) and (max-width: $laptop-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $portrait),
-  (min-width: $laptop-min) and (min-resolution: 2dppx) and (orientation: $portrait) {
+  (min-width: $laptop-min) and (max-width: $laptop-max) and (min-resolution: 2dppx) and (orientation: $portrait) {
     @content;
   }
 }
 @mixin screen-desktop-portrait {
   @media (min-width: $desktop-min) and (max-width: $desktop-max) and (-webkit-min-device-pixel-ratio: 2) and (orientation: $portrait),
-  (min-width: $desktop-min) and (min-resolution: 2dppx) and (orientation: $portrait) {
+  (min-width: $desktop-min) and (max-width: $desktop-max) and (min-resolution: 2dppx) and (orientation: $portrait) {
     @content;
   }
 }
@@ -82,22 +82,22 @@
   }
 }
 @mixin nrm-screen-mobile-portrait {
-  @media only screen and (max-width: $mobile-max) and (orientation: $portrait) {
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) and (orientation: $portrait) {
     @content;
   }
 }
 @mixin nrm-screen-tablet-portrait {
-  @media only screen and (min-width: $tablet-min) and (orientation: $portrait) {
+  @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) and (orientation: $portrait) {
     @content;
   }
 }
 @mixin nrm-screen-laptop-portrait {
-  @media only screen and (min-width: $laptop-min) and (orientation: $portrait) {
+  @media only screen and (min-width: $laptop-min) and (max-width: $laptop-max) and (orientation: $portrait) {
     @content;
   }
 }
 @mixin nrm-screen-desktop-portrait {
-  @media only screen and (min-width: $desktop-min) and (orientation: $portrait) {
+  @media only screen and (min-width: $desktop-min) and (max-width: $desktop-max) and (orientation: $portrait) {
     @content;
   }
 }
@@ -123,13 +123,8 @@
     @content;
   }
 }
-@mixin nrm-screen-desktop-landscape {
-  @media only screen and (min-width: $desktop-min) and (max-width: $desktop-max) and (orientation: $landscape) {
-    @content;
-  }
-}
 
-@mixin iframe {
+@mixin iframe-gt-clip {
     .iframe-box {
         padding:60.2% 0 0 0;
         position:relative;

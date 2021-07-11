@@ -3,7 +3,7 @@
 @section('content')
 <div class="container home">
     <h2 class="title-m-t">新着Global Talents</h2>
-    <div class="row new-face wrap justify-content-between">            
+    <div class="row new-face wrap justify-content-between card-box">            
         @foreach($new_faces as $new_face)    
         <div class="card-deck col-md-6 col-lg-4">
             <div class="card">  
@@ -20,7 +20,7 @@
         @endforeach
     </div>
     <h2 class="title-m-t">Global Talents一覧</h2>
-    <div class="row index wrap justify-content-between">
+    <div class="row index wrap justify-content-between card-box">
         @foreach($global_talent_names as $global_talent_name)    
         <div class="card-deck col-md-6 col-lg-4">
             <div class="card">  
@@ -51,7 +51,7 @@
         </div>
         @endforeach
     </div> --}}
-    <!-- <button class="btn btn-lg btn-primary" onclick="location:href='#'">Global Talents検索画面へ</button> -->
+    <!-- <button class="btn btn-lg btn-primary" onclick="location:href='#'">Global Talents検索画面へ</button>
     <h2 class="title-m-t">活躍の物語</h2>
     <div class="success-story wrap">
         <div class="card mb-3">
@@ -84,6 +84,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
