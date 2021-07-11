@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Global Talent Library'),
+    'name' => env('APP_NAME', "Global Talent Library"),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://global-talent-library.sociarise.co.jp/'),
 
     'asset_url' => env('ASSET_URL', null),
 

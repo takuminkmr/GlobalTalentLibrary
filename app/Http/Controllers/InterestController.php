@@ -18,7 +18,8 @@ class InterestController extends Controller
     {
         $id = Auth::id();
         
-        $interests = DB::table('interests')->where('interest_member_id', '=', $id)
+        $interests = DB::table('interests')
+        ->where('interest_member_id', '=', $id)
         ->join('global_talents', 'interests.interest_gt_id', '=', 'global_talents.id')
         ->select('global_talents.*')
         ->get();
@@ -41,5 +42,20 @@ class InterestController extends Controller
         $interest->save();
 
         return redirect()->route('detail', ['id' => $interest->interest_gt_id]);
+    }
+
+    public function destroy(Request $request)
+    {
+        $id = Auth::id();
+        $removeId = $request->input('interest_gt_id');
+
+        $interest = DB::table('interests')
+        ->where([
+            ['interest_member_id', '=', $id],
+            ['interest_gt_id', '=', $removeId],
+        ])
+        ->delete();
+
+        return redirect()->route('interest', ['id' => $id]);
     }
 }
