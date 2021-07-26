@@ -41,8 +41,9 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
-        $this->middleware('guest:admin');
+        // $this->middleware('guest');
+        // $this->middleware('guest:admin');
+        $this->middleware('auth:admin');
     }
 
     // protected function guard()
@@ -65,7 +66,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:100', 'unique:users'],
             'tel' => ['required', 'string', 'max:20'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'keyphrase' => ['required', 'string', 'regex:/^chaman10$/'],
+            // 'keyphrase' => ['required', 'string', 'regex:/^chaman10$/'],
         ]);
     }
 

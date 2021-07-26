@@ -102,6 +102,33 @@ class UserProfileController extends Controller
         return redirect()->route('userProfile.show', ['id' => $user->id]);
     }
 
+    // public function editPassword(){
+    //     $user = User::find($id);
+
+    //     return view('userProfile.show', compact('user'));
+    // }
+
+    public function updatePassword(Request $request, $id){
+        $user = User::find($id);
+
+        $request->validate([
+            'current-password' => [
+                'required',
+                function ($attribute, $value, $fail) {
+                    if(!(\Hash::check($value, \Auth::user()->password))) {
+                      return $fail('現在のパスワードを正しく入力してください');
+                    }
+                },
+            ],
+            'new-password' => 'required|string|min:8|confirmed|different:current-password',
+        ]);
+
+        $user->password = bcrypt($request->get('new-password'));
+        $user->save();
+
+        return redirect()->back()->with('update_password_success', 'パスワードを変更しました。');
+    }
+
     /**
      * Remove the specified resource from storage.
      *

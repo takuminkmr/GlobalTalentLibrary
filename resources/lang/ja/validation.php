@@ -118,6 +118,7 @@ return [
 
     'attributes' => [
         'password' => 'パスワード',
+        'new-password' => '新しいパスワード'
     ],
 
 ];

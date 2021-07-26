@@ -168,6 +168,9 @@
                             @isset($authgroup)
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('gt.index') }}">グローバルタレント登録＆一覧</a>
+                                <a class="dropdown-item" href="{{ route('register') }}">ユーザー登録</a>
+                                <a class="dropdown-item" href="">お気に入り状況確認</a>
+                                <a class="dropdown-item" href="">面会状況確認</a>
                                 
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
