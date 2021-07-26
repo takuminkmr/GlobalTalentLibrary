@@ -52,8 +52,10 @@ Route::group(['prefix' => 'gt', 'middleware' => 'auth:admin'], function () {
     Route::post('destroy/{id}', 'GtController@destroy')->name('gt.destroy');
 });
 
-Route::group(['prefix' => 'userProfile'], function () {
+Route::group(['prefix' => 'userProfile', 'middleware' => 'auth:web'], function () {
     Route::get('show/{id}', 'UserProfileController@show')->name('userProfile.show');
     Route::get('edit/{id}', 'UserProfileController@edit')->name('userProfile.edit');
     Route::post('update/{id}', 'UserProfileController@update')->name('userProfile.update');
+    // Route::get('password/edit/{id}', 'UserProfileController@editPassword')->name('userProfile.password.edit');
+    Route::post('password/{id}', 'UserProfileController@updatePassword')->name('userProfile.password.update');
 });
