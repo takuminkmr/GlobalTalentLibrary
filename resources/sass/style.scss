@@ -116,6 +116,12 @@ h2.title-m-t {
 
 .card-deck {
     .card {
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
         .card-body {
             color: #333;
             h5,h6 {
