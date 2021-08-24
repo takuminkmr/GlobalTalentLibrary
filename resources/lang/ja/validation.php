@@ -118,7 +118,9 @@ return [
 
     'attributes' => [
         'password' => 'パスワード',
-        'new-password' => '新しいパスワード'
+        'new-password' => '新しいパスワード',
+        'current-password' => '現在のパスワード',
+        'photo' => '画像'
     ],
 
 ];
