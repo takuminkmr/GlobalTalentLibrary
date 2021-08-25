@@ -50,6 +50,7 @@ Route::group(['prefix' => 'gt', 'middleware' => 'auth:admin'], function () {
     Route::get('edit/{id}', 'GtController@edit')->name('gt.edit');
     Route::post('update/{id}', 'GtController@update')->name('gt.update');
     Route::post('destroy/{id}', 'GtController@destroy')->name('gt.destroy');
+    Route::get('interest-index', 'GtController@interestIndex')->name('gt.interest-index');
 });
 
 Route::group(['prefix' => 'userProfile', 'middleware' => 'auth:web'], function () {

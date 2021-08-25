@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Models\GlobalTalent;
+use App\Models\Interest;
 
 class GtController extends Controller
 {
@@ -144,5 +145,20 @@ class GtController extends Controller
         $global_talent->delete();
 
         return redirect('member/show');
+    }
+
+    public function interestIndex()
+    {   
+        $interests = DB::table('global_talents')
+            ->join('interests', 'global_talents.id', '=', 'interests.interest_gt_id')
+            ->select(
+            '*',
+            DB::raw('count(interests.id) AS count')
+            )
+            ->groupBy('global_talents.id')
+            ->orderBy('count', 'DESC')
+            ->get();
+
+        return view('gt.interest-index', ['authgroup' => 'admin'], compact('interests'));
     }
 }
