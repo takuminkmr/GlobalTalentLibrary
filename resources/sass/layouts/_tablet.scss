@@ -1,0 +1,158 @@
+@import "../variables";
+@import "../mixin";
+
+// @include screen-tablet-portrait {
+//     // h1,
+//     // .h1 {
+//     //     font-size: 3.2rem;
+//     //     font-weight: 600;
+//     // }
+//     // h2,
+//     // .h2 {
+//     //     font-size: 2.8rem;
+//     // }
+//     // h3,
+//     // h4,
+//     // h5,
+//     // h6,
+//     // p,
+//     // .h3,
+//     // .h4,
+//     // .h5 {
+//     //     font-size: 1.6rem;
+//     // }
+//     // .display-4 {
+//     //     font-size: 3.2rem;
+//     // }
+//     // .btn {
+//     //     font-size: 2.4rem;
+//     // }
+//     .pg-top,
+//     .login-top {
+//         #modal-dialog-appform {
+//             .modal-body {
+//                 font-size: 1.6rem;
+
+//                 .form-check input {
+//                     margin-top: 0.9rem;
+//                     margin-left: 1rem;
+//                 }
+//             }
+//         }
+//     }
+
+//     .pg-top {
+//         .top-right {
+//             top: 80px;
+
+//             a {
+//                 padding: 0 1rem;
+//                 font-size: 2.4rem;
+//                 font-weight: 600;
+//             }
+//         }
+
+//         .top-img {
+//             .movetext1 span {
+//                 font-size: 2.2rem;
+//             }
+
+//             .movetext2 span {
+//                 font-size: 3.6rem;
+//             }
+//         }
+
+//         .what-is-gt {
+//             .impr {
+//                 width: 40%;
+//                 height: 200vh;
+//             }
+//         }
+
+//         .meet-to-know {
+//             .impr {
+//                 width: 50%;
+//                 height: 300vh;
+//             }
+//         }
+
+//         .faq {
+//             .box {
+//                 font-size: 1.6rem;
+//             }
+
+//             .box-content {
+//                 font-size: 1.6rem;
+//             }
+//         }
+//     }
+// }
+
+// @include screen-tablet-landscape {
+//     // h1,
+//     // .h1 {
+//     //     font-size: 3.6rem;
+//     //     font-weight: 600;
+//     // }
+//     // h2,
+//     // .h2 {
+//     //     font-size: 2.8rem;
+//     // }
+//     // h3,
+//     // h4,
+//     // h5,
+//     // h6,
+//     // p,
+//     // .h3,
+//     // .h4,
+//     // .h5 {
+//     //     font-size: 1.6rem;
+//     // }
+//     // .display-4 {
+//     //     font-size: 1rem;
+//     // }
+//     // .btn {
+//     //     font-size: 1rem;
+//     // }
+
+//     .pg-top {
+//         .top-right a {
+//             font-size: 1.1rem;
+//             font-weight: 600;
+//         }
+
+//         .top-img {
+//             .ccp-en {
+//                 bottom: 5rem;
+//                 left: 3rem;
+//             }
+
+//             .ccp-ja {
+//                 bottom: 3rem;
+//                 left: 3rem;
+//             }
+
+//             .movetext1 span {
+//                 font-size: 1.1rem;
+//             }
+
+//             .movetext2 span {
+//                 font-size: 2.2rem;
+//             }
+//         }
+
+//         .what-is-gt {
+//             .impr {
+//                 width: 65%;
+//                 height: 100vh;
+//             }
+//         }
+
+//         .meet-to-know {
+//             .impr {
+//                 width: 50%;
+//                 height: 120vh;
+//             }
+//         }
+//     }
+// }

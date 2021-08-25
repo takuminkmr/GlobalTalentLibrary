@@ -263,38 +263,38 @@
             <h2 class="text-center mt-5">サービスの流れ</h2>
             <h6 class="text-center pb-3">刺激的な出会いまでの５ステップ</h6>
             <div class="row justify-content-center">
-                <div class="col-xl-2 col-md-4 px-3 m-1 steps">
+                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">1</span></h6>
                     <h3>利用申込</h3>
                     <img class="img-fluid my-3" src="../../images/signup.png">
-                    <p class="text-left"><a class="text-decoration-none" data-toggle="modal" data-target="#applicationForm" href="#">利用申込</a>より利用登録をお願いします。</p>
+                    <p><a class="text-decoration-none" data-toggle="modal" data-target="#applicationForm" href="#">利用申込</a>より利用登録をお願いします。</p>
                     <p class="text-left"><small class="text-muted">審査の結果、ご利用をお断りさせていただく場合もございます。</small></p>
                 </div>
-                <div class="col-xl-2 col-md-4 px-3 m-1 steps">
+                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">2</span></h6>
                     <h3>閲覧</h3>
                     <img class="img-fluid my-3" src="../../images/look-into.png">
-                    <p class="text-left">厳選されたグローバル人材をご覧ください。</p>
+                    <p>厳選されたグローバル人材をご覧ください。</p>
                 </div>
-                <div class="col-xl-2 col-md-4 px-3 m-1 steps">
+                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">3</span></h6>
                     <h3>招待</h3>
                     <img class="img-fluid my-3" src="../../images/invite.png">
-                    <p class="text-left">気になったら面会依頼を送りましょう。</p>
+                    <p>気になったら面会依頼を送りましょう。</p>
                     <p class="text-left"><small class="text-muted">「お気に入り」に追加して、会う前の質問・確認もできます。</small></p>
                 </div>
-                <div class="col-xl-2 col-md-4 px-3 m-1 steps">
+                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">4</span></h6>
                     <h3>設定</h3>
                     <img class="img-fluid my-3" src="../../images/appointment.png">
-                    <p class="text-left">専任CAが面会日時の設定を致します。</p>
+                    <p>専任CAが面会日時の設定を致します。</p>
                     <p class="text-left"><small class="text-muted">面会不可の場合、理由をフィードバック致します。</small></p>
                 </div>
-                <div class="col-xl-2 col-md-4 px-3 m-1 steps">
+                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">5</span></h6>
                     <h3>面会</h3>
                     <img class="img-fluid my-3" src="../../images/meet.png">
-                    <p class="text-left">お互いの未来にとって素晴らしい出会いを！</p>
+                    <p>お互いの未来にとって素晴らしい出会いを！</p>
                 </div>
             </div>
         </div>
@@ -304,21 +304,21 @@
             <h2 class="text-center">活用シーン</h2>
             <h6 class="text-center pb-3">まず会うことから全ては始まる</h6>
             <div class="card-deck">
-                <div class="card">
+                <div class="card my-3">
                     <img src="../../images/internship-min.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">インターンシップに誘う</h5>
                         <p class="card-text">実務を通して適性や相性を図るのはグローバル人材の採用で最も合理的な手法です。<br>彼らもまた成長の機会に貪欲で、期待以上の活躍が期待できます。</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card my-3">
                     <img src="../../images/recruiting-min.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">採用選考を実施する</h5>
                     <p class="card-text">良さそうな人を見つけたら積極的に採用選考に誘いましょう。会社の本気度を優秀な人材は感じ取り、自身のキャリアとして真剣に考えます。</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card my-3">
                     <img src="../../images/shake-hands-min.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">ネットワーキングのために</h5>

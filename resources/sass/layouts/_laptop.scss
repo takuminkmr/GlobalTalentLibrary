@@ -1,0 +1,66 @@
+@import "../variables";
+@import "../mixin";
+
+// @include screen-laptop-portrait {
+//     .pg-top {
+//         .top-right {
+//             top: 60px;
+
+//             a {
+//                 padding: 0 1rem;
+//                 font-size: 1.8rem;
+//                 font-weight: 600;
+//             }
+//         }
+
+//         .top-img {
+//             .movetext1 span {
+//                 font-size: 2.2rem;
+//             }
+
+//             .movetext2 span {
+//                 font-size: 3.6rem;
+//             }
+//         }
+//     }
+// }
+
+// @include screen-laptop-landscape {
+//     // h1,
+//     // .h1 {
+//     //     font-size: 1.8rem;
+//     // }
+//     // h2,
+//     // .h2 {
+//     //     font-size: 1.6rem;
+//     // }
+//     // h3,
+//     // h4,
+//     // h5,
+//     // h6,
+//     // p.h3,
+//     // .h4,
+//     // .h5 {
+//     //     font-size: 1.4rem;
+//     // }
+//     // .display-4 {
+//     //     font-size: 2.4rem;
+//     // }
+
+//     .pg-top {
+//         .top-right a {
+//             font-size: 1.2rem;
+//             font-weight: 600;
+//         }
+
+//         .top-img {
+//             .movetext1 span {
+//                 font-size: 1.2rem;
+//             }
+
+//             .movetext2 span {
+//                 font-size: 2.4rem;
+//             }
+//         }
+//     }
+// }

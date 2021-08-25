@@ -1,0 +1,22 @@
+// @import "../variables";
+// @import "../mixin";
+
+@include screen-desktop-landscape {
+  .pg-top {
+    .what-is-gt {
+      .impr {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@include screen-desktop-portrait {
+  .pg-top {
+    .what-is-gt {
+      .impr {
+        width: 30%;
+      }
+    }
+  }
+}

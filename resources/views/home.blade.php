@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container home">
-    <h2 class="title-m-t">新着Global Talents</h2>
+    <h3 class="mt-3">新着Global Talents</h3>
     <div class="row new-face wrap justify-content-between card-box">            
         @foreach($new_faces as $new_face)    
         <div class="card-deck col-md-6 col-lg-4">
@@ -10,8 +10,8 @@
                 <a class="text-decoration-none" href="/detail/{{ $new_face->id }}">
                 <img src="{{ Storage::url($new_face->photo) }}">
                 <div class="card-body">
-                    <h5 class="card-title text-center">{{ $new_face->gt_name }}</h5>
-                    <h6 class="card-text text-center">{{ $new_face->school }}　{{ $new_face->faculty }}</h6>
+                    <h4 class="card-title text-center">{{ $new_face->gt_name }}</h4>
+                    <h6 class="card-text text-center mb-3">{{ $new_face->school }}　{{ $new_face->faculty }}</h6>
                     <p class="card-text">{!! nl2br(e(Str::limit($new_face->introduction, 80))) !!}</p>
                 </div>
                 </a>
@@ -19,7 +19,7 @@
         </div>
         @endforeach
     </div>
-    <h2 class="title-m-t">Global Talents一覧</h2>
+    <h3 class="mt-7">Global Talents一覧</h3>
     <div class="row index wrap justify-content-between card-box">
         @foreach($global_talent_names as $global_talent_name)    
         <div class="card-deck col-md-6 col-lg-4">
@@ -27,8 +27,8 @@
                 <a class="text-decoration-none" href="/detail/{{ $global_talent_name->id }}">
                 <img src="{{ Storage::url($global_talent_name->photo) }}">
                 <div class="card-body">
-                    <h5 class="card-title text-center">{{ $global_talent_name->gt_name }}</h5>
-                    <h6 class="card-text text-center">{{ $global_talent_name->school }}　{{ $global_talent_name->faculty }}</h6>
+                    <h4 class="card-title text-center">{{ $global_talent_name->gt_name }}</h4>
+                    <h6 class="card-text text-center mb-3">{{ $global_talent_name->school }}　{{ $global_talent_name->faculty }}</h6>
                     <p class="card-text">{!! nl2br(e(Str::limit($global_talent_name->introduction, 80))) !!}</p>
                 </div>
                 </a>
