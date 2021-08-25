@@ -41,9 +41,9 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('guest');
-        // $this->middleware('guest:admin');
-        $this->middleware('auth:admin');
+        $this->middleware('guest');
+        $this->middleware('guest:admin');
+        // $this->middleware('auth:admin');
     }
 
     // protected function guard()
@@ -100,7 +100,7 @@ class RegisterController extends Controller
 
     public function showAdminRegisterForm()
     {
-        return view('auth.register', ['authgroup' => 'admin']);
+        return view('auth.register');
     }
 
     protected function createAdmin(Request $request)

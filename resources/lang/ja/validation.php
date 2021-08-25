@@ -117,6 +117,7 @@ return [
     */
 
     'attributes' => [
+        'email' => 'メールアドレス',
         'password' => 'パスワード',
         'new-password' => '新しいパスワード',
         'current-password' => '現在のパスワード',
