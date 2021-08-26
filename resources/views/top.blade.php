@@ -174,21 +174,21 @@
                     <img class="img-fluid" src="../../images/sandeep-min.jpg">
                 </div>
                 <div class="col-lg intro">
-                    <h3 class="h1">サンディープ</h3>
-                    <h4>東北大学大学院　情報科学研究科</h4>
-                    <p>日本にはITの基礎研究・技術力はあれど、実社会にあまり反映されず、もったいない。そこに自分の価値がある。</p>
+                    <h3 class="h1">ティムール</h3>
+                    <h4>一橋大学　経営学部 経営管理研究科</h4>
+                    <p>言語はできて当たり前。大切なのは、言葉を通じて相手を理解し、コミュニケーションを通じて目標達成すること。</p>
                     <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gt-sample1">動画を見る</button>
                     <div class="modal fade" id="gt-sample1" tabindex="-1" role="dialog" aria-labelledby="gt-sample1Title" aria-hidden="true">
                         <div id="modal-dialog-gt-sample1" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample1Title">サンプル1のお名前</h5>
+                                    <h5 class="modal-title" id="gt-sample1Title">ティムール</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/499558457?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Global Talent サンディープさん"></iframe></div>
+                                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/579641300?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Global Talent サンディープさん"></iframe></div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -203,21 +203,21 @@
                     <img class="img-fluid" src="../../images/sharma-min.jpg">
                 </div>
                 <div class="col-lg order-lg-first intro">
-                    <h3 class="h1">シャルマ</h3>
-                    <h4>東京大学大学院　文化人類学研究生</h4>
-                    <p>自走型のお手本。「人に伝える」ことに高い関心を持ち、ブログ・ウェブサイトの構築からSEOまで自主学習で実行。</p>
+                    <h3 class="h1">サラ</h3>
+                    <h4>東京大学大学院　国際プログラムコース</h4>
+                    <p>次世代のリーダー育成に情熱を燃やす。自身のバックグラウンドを武器に、英語教育に変革を。</p>
                     <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gt-sample2">動画を見る</button>
                     <div class="modal fade" id="gt-sample2" tabindex="-1" role="dialog" aria-labelledby="gt-sample2Title" aria-hidden="true">
                         <div id="modal-dialog-gt-sample2" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample2Title">サンプル2のお名前</h5>
+                                    <h5 class="modal-title" id="gt-sample2Title">サラ</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/529243796?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Global Talent シャルマさん"></iframe></div>
+                                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/579641068?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Global Talent シャルマさん"></iframe></div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -240,7 +240,7 @@
                         <div id="modal-dialog-gt-sample3" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample3Title">サンプル3のお名前</h5>
+                                    <h5 class="modal-title" id="gt-sample3Title">ユーチェン</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -355,7 +355,7 @@
                         <section class="box">
                             <label class="box-title" for="cb1">費用はかかりますか？</label>
                             <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※ 後日、料金変更の可能性があります。</small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
                         </section>
                         <input type="radio" name="accordion" id="cb2" />
                         <section class="box">

@@ -41,9 +41,9 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
-        $this->middleware('guest:admin');
-        // $this->middleware('auth:admin');
+        // $this->middleware('guest');
+        // $this->middleware('guest:admin');
+        $this->middleware('auth:admin');
     }
 
     // protected function guard()
@@ -86,7 +86,7 @@ class RegisterController extends Controller
             'tel' => $data['tel'],
             'password' => Hash::make($data['password']),
         ]);
-        return redirect()->intended('login');
+        return redirect()->intended('/register');
     }
 
     protected function adminValidator(array $data)
@@ -100,7 +100,7 @@ class RegisterController extends Controller
 
     public function showAdminRegisterForm()
     {
-        return view('auth.register');
+        return view('auth.register', ['authgroup' => 'admin']);
     }
 
     protected function createAdmin(Request $request)
@@ -111,6 +111,6 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        return redirect()->intended('/login/admin');
+        return redirect()->intended('/register/admin');
     }
 }
