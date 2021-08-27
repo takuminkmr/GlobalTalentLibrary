@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-lg-9">
             <div class="card">
                 <div class="card-header">登録情報確認</div>
                 <div class="card-body">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8 mt-4">
+        <div class="col-lg-9 mt-4">
             <div class="card">
                 <div class="card-header">パスワード変更</div>
 

@@ -25,8 +25,8 @@
                 <div class="card">
                 <img src="{{ Storage::url($global_talent->photo) }}">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $global_talent->gt_name }}</h5>
-                        <h5 class="card-title">{{ $global_talent->school }} {{ $global_talent->faculty }}</h5>
+                        <h4 class="card-title text-center">{{ $global_talent->gt_name }}</h4>
+                        <h6 class="card-title text-center">{{ $global_talent->school }} {{ $global_talent->faculty }}</h6>
                         <p class="card-text">{!! nl2br(e(Str::limit( $global_talent->introduction, 80))) !!}</p>
                     </div>
                 </div>

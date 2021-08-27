@@ -2,13 +2,12 @@
 
 @section('content')
 <div class="container apply">
-    <h2 class="title">面会申込みフォーム</h2>
+    <h3 class="my-3 my-lg-5 text-center">面会申込みフォーム</h3>
     <div class="row justify-content-center">
         <div class="col-md-3 img-box">
             <img src="{{ Storage::url($global_talent->photo) }}">
-            <h2 class="mt-3">{{ $global_talent->gt_name }}</h2>
-            <h4 class="mt-3">{{ $global_talent->faculty }}</h4>
-            <button type="button" class="btn btn-block btn-danger mt-5" onclick="history.back()">戻る</button>
+            <h4 class="mt-3">{{ $global_talent->gt_name }}</h4>
+            <h6 class="mb-3">{{ $global_talent->faculty }}</h6>
         </div>
         <div class="col-md-7">
             <form method="POST" action="{{ route('complete') }}">
@@ -23,15 +22,15 @@
                 <div class="form-group row">
                     <div class="col-md-4 col-form-label text-md-right">面会方法</div>
                     <div class="col-md-8 col-form-label">
-                        <div class="form-check form-check-inline">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_way" id="meet_way1" value="1" required>
-                            <label class="form-check-label" for="meet_way1">ウェブで</label>
+                            <label class="form-check-label" for="meet_way1">ウェブ面談で</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_way" id="meet_way2" value="2">
                             <label class="form-check-label" for="meet_way2">オフィスに招待して</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_way" id="meet_way3" value="3">
                             <label class="form-check-label" for="meet_way3">その他の方法で</label>
                         </div>
@@ -41,19 +40,19 @@
                 <div class="form-group row">
                     <div class="col-md-4 col-form-label text-md-right">面会目的</div>
                     <div class="col-md-8 col-form-label">
-                        <div class="form-check">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose1" value="1" required>
                             <label class="form-check-label" for="meet_purpose1">社員として採用を検討</label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose2" value="2">
                             <label class="form-check-label" for="meet_purpose2">インターンシップのお誘い</label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose3" value="3">
                             <label class="form-check-label" for="meet_purpose3">交流を図るためのカジュアル面談</label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose4" value="4">
                             <label class="form-check-label" for="meet_purpose4">その他</label>
                         </div>
@@ -70,10 +69,13 @@
                 <input type="hidden" name="apply_gt_id" value="{{ $global_talent->id }}">
                 <div class="form-group row mb-0">
                     <div class="col-md-8 offset-md-4">
-                        <button type="submit" class="btn btn-lg btn-primary">面会を申し込む</button>
+                        <button type="submit" class="btn btn-lg btn-block btn-primary my-4">面会を申し込む</button>
                     </div>
                 </div>
             </form>
+            <div class="col-md-8 offset-md-4 p-0 text-right">
+                <button type="button" class="btn btn-lg btn-danger my-4" onclick="history.back()">戻る</button>
+            </div>
                 <!-- @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}

@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     @isset($authgroup)
-                    <form method="POST" action="{{ url("register/$authgroup") }}">
+                    <form method="POST" action="{{ url("register/admin") }}">
                     @csrf
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('氏名') }}</label>

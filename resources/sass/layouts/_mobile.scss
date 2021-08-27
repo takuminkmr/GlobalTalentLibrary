@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../mixin";
+
+// @include screen-mobile-portrait {
+//     h1,
+//     .h1 {
+//         font-size: 2.6rem;
+//         font-weight: 600;
+//     }
+//     h2,
+//     .h2 {
+//         font-size: 2.2rem;
+//     }
+//     h3,
+//     h4,
+//     h5,
+//     h6,
+//     p,
+//     .h3,
+//     .h4,
+//     .h5 {
+//         font-size: 1.6rem;
+//     }
+//     .display-4 {
+//         font-size: 2.4rem;
+//     }
+
+//     .pg-top {
+//         .what-is-gt {
+//             .impr {
+//                 width: 70%;
+//                 height: 100vh;
+//             }
+//         }
+
+//         .meet-to-know {
+//             .impr {
+//                 width: 50%;
+//                 height: 130vh;
+//             }
+//         }
+//     }
+// }
+
+// @include screen-mobile-landscape {
+//     // h1,
+//     // .h1 {
+//     //     font-size: 2.6rem;
+//     //     font-weight: 600;
+//     // }
+//     // h2,
+//     // .h2 {
+//     //     font-size: 2.2rem;
+//     // }
+//     // h3,
+//     // h4,
+//     // h5,
+//     // h6,
+//     // p,
+//     // .h3,
+//     // .h4,
+//     // .h5 {
+//     //     font-size: 1.6rem;
+//     // }
+//     // .display-4 {
+//     //     font-size: 2.4rem;
+//     // }
+
+//     .pg-top {
+//         .top-right a {
+//             font-size: 1rem;
+//         }
+
+//         .top-img {
+//             .ccp-en {
+//                 bottom: 4rem;
+//                 left: 2rem;
+//             }
+
+//             .ccp-ja {
+//                 bottom: 2rem;
+//                 left: 2rem;
+//             }
+
+//             .movetext1 span {
+//                 font-size: 1rem;
+//             }
+
+//             .movetext2 span {
+//                 font-size: 2rem;
+//             }
+//         }
+
+//         .what-is-gt {
+//             .impr {
+//                 width: 70%;
+//                 height: 110vh;
+//             }
+//         }
+
+//         .meet-to-know {
+//             .impr {
+//                 width: 50%;
+//                 height: 130vh;
+//             }
+//         }
+//     }
+// }

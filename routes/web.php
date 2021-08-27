@@ -21,7 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
 Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
-
 Route::post('/login/admin', 'Auth\LoginController@adminLogin');
 Route::post('/register/admin', 'Auth\RegisterController@createAdmin')->name('admin-register');
 
@@ -50,6 +49,7 @@ Route::group(['prefix' => 'gt', 'middleware' => 'auth:admin'], function () {
     Route::get('edit/{id}', 'GtController@edit')->name('gt.edit');
     Route::post('update/{id}', 'GtController@update')->name('gt.update');
     Route::post('destroy/{id}', 'GtController@destroy')->name('gt.destroy');
+    Route::get('interest-index', 'GtController@interestIndex')->name('gt.interest-index');
 });
 
 Route::group(['prefix' => 'userProfile', 'middleware' => 'auth:web'], function () {

@@ -86,7 +86,7 @@ class RegisterController extends Controller
             'tel' => $data['tel'],
             'password' => Hash::make($data['password']),
         ]);
-        return redirect()->intended('login');
+        return redirect()->intended('/register');
     }
 
     protected function adminValidator(array $data)
@@ -111,6 +111,6 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        return redirect()->intended('/login/admin');
+        return redirect()->intended('/register/admin');
     }
 }
