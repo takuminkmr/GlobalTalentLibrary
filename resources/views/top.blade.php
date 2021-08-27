@@ -171,7 +171,7 @@
             <h2 class="display-4">Global Talent Libraryでは、<br>こんな人たちと出会えます。</h2>
             <div class="row">
                 <div class="col-lg img">
-                    <img class="img-fluid" src="../../images/sandeep-min.jpg">
+                    <img class="img-fluid" src="../../images/timur-min.jpg">
                 </div>
                 <div class="col-lg intro">
                     <h3 class="h1">ティムール</h3>
@@ -182,7 +182,7 @@
                         <div id="modal-dialog-gt-sample1" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample1Title">ティムール</h5>
+                                    <h5 class="modal-title" id="gt-sample1Title">Global Talent【ユーティリティ人材】</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -200,7 +200,7 @@
             </div>
             <div class="row">
                 <div class="col-lg order-lg-last img">
-                    <img class="img-fluid" src="../../images/sharma-min.jpg">
+                    <img class="img-fluid" src="../../images/sara-min.jpg">
                 </div>
                 <div class="col-lg order-lg-first intro">
                     <h3 class="h1">サラ</h3>
@@ -211,7 +211,7 @@
                         <div id="modal-dialog-gt-sample2" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample2Title">サラ</h5>
+                                    <h5 class="modal-title" id="gt-sample2Title">Global Talent【知日人材】</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -240,7 +240,7 @@
                         <div id="modal-dialog-gt-sample3" class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="gt-sample3Title">ユーチェン</h5>
+                                    <h5 class="modal-title" id="gt-sample3Title">Global Talent【エキスパート人材】</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -257,6 +257,27 @@
                 </div>
             </div>
         </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="text-center">Global Talent Libraryの可能性</h2>
+                <h6 class="text-center pb-3">従来の採用慣行に馴染まなかった優秀層と出会える</h6>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>卒業間近になって、日本での就職を意識し始めた人</h5>
+                        <p>在学中に就職活動を行うことは、世界的に見て珍しい習慣です。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>研究、勉学、その他活動に集中していた人</h5>
+                        <p>奨学金生などとりわけ優秀な人たちは、目の前の活動に全力を注ぎ、就職活動が後回しになります。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>ウェブテストなど明らかに不利な選考で落ちた人</h5>
+                        <p>彼らは言います。「問題自体は難しくない。ただ、日本語を読むところに時間がかかるから、制限時間内に解ききれない。」</p>
+                    </div>
+                </div>
+                <p class="text-center py-3">長く、複雑で、画一的な採用選考から数え切れないほど多くの才能が流失しています。</p>
+            </div>
         </section>
         <section class="service-flow pt-5">
         <div class="container-fluid">
@@ -353,17 +374,23 @@
                         <h6 class="text-center pb-3">FAQ</h6>
                         <input type="radio" name="accordion" id="cb1" />
                         <section class="box">
-                            <label class="box-title" for="cb1">費用はかかりますか？</label>
+                            <label class="box-title" for="cb1">Global Talentとはどのような人材ですか？</label>
                             <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※ 後日、料金変更の可能性があります。</small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                            <div class="box-content">世界規模の特筆した才能や情熱を持った人材です。特定の分野で最先端の知識や技術を有する【エキスパート人材】、圧倒的な学習能力と行動力で多彩な才能を発揮する【ユーティリティ人材】、日本社会への高い関心と卓越した日本語コミュニケーション力を有する【知日人材】などがいます。</div>
                         </section>
                         <input type="radio" name="accordion" id="cb2" />
+                        <section class="box">
+                            <label class="box-title" for="cb1">費用はかかりますか？</label>
+                            <label class="box-close" for="acc-close"></label>
+                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※ 後日、料金変更の可能性があります。<br></small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb3" />
                         <section class="box">
                             <label class="box-title" for="cb2">会える人数に制限はありますか？</label>
                             <label class="box-close" for="acc-close"></label>
                             <div class="box-content">制限はありません。希望すれば<b>掲載者全員と会うこともできます</b>。但し、面会目的は毎回明示していただき、掲載者の同意を得られた場合のみお引き合わせ致します。</div>
                         </section>
-                        <input type="radio" name="accordion" id="cb3" />
+                        <input type="radio" name="accordion" id="cb4" />
                         <section class="box">
                             <label class="box-title" for="cb3">利用申込時の審査はどのような基準で行われますか？</label>
                             <label class="box-close" for="acc-close"></label>
@@ -408,5 +435,3 @@
     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js"></script>
     </body>
 </html>
-
-
