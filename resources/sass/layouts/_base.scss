@@ -16,7 +16,7 @@
 }
 
 .card-deck .card {
-  max-width: 500px;
+  max-width: 700px;
   background: $gray-100;
 
   img {
@@ -48,7 +48,7 @@
     a {
       color: $white;
       padding: 0 0.5rem;
-      font-size: 1.4rem;
+      @include font-size(2)
     }
   }
 
@@ -152,11 +152,13 @@
       .intro {
         margin-top: 2rem;
 
-        #gt-sample1,
-        #gt-sample2,
-        #gt-sample3 {
-          #modal-dialog-gt-sample1 {
-            max-width: 700px;
+        a {
+          @include font-size(2);
+        }
+
+        .gt-sample {
+          .modal-dialog {
+            max-width: 800px;
           }
         }
       }
@@ -173,7 +175,7 @@
         border-radius: 20px;
         text-align: center;
         padding-top: 2rem;
-        max-width: 500px;
+        max-width: 700px;
 
         img {
           height: 5rem;
@@ -289,6 +291,9 @@
 
 // デバイスの横幅にかかわらず共通＆Portrait
 @include screen-portrait {
+  h6, .h6 { @include font-size(1.25); }
+  p, a, ul, li, .faq { @include font-size(1.4); }
+
   .full-height {
     height: 70vh;
   }
@@ -300,6 +305,12 @@
         height: 35vh;
       }
     }
+
+    .gt-sample {
+      .row .intro a {
+            @include font-size(2);
+          }
+        }
 
     .scenes {
       .card-deck {
@@ -326,7 +337,13 @@
         height: 100vh;
       }
     }
-  }
+
+    .gt-sample {
+      .row .intro a {
+            @include font-size(1);
+          }
+        }
+      }
 
   // .pg-top {
   //   .what-is-gt {

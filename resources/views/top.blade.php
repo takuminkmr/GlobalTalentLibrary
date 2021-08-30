@@ -263,15 +263,15 @@
                 <h2 class="text-center">Global Talent Libraryの可能性</h2>
                 <h6 class="text-center pb-3">従来の採用慣行に馴染まなかった優秀層と出会える</h6>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <h5>卒業間近になって、日本での就職を意識し始めた人</h5>
                         <p>在学中に就職活動を行うことは、世界的に見て珍しい習慣です。</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <h5>研究、勉学、その他活動に集中していた人</h5>
                         <p>奨学金生などとりわけ優秀な人たちは、目の前の活動に全力を注ぎ、就職活動が後回しになります。</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <h5>ウェブテストなど明らかに不利な選考で落ちた人</h5>
                         <p>彼らは言います。「問題自体は難しくない。ただ、日本語を読むところに時間がかかるから、制限時間内に解ききれない。」</p>
                     </div>
@@ -284,34 +284,34 @@
             <h2 class="text-center mt-5">サービスの流れ</h2>
             <h6 class="text-center pb-3">刺激的な出会いまでの５ステップ</h6>
             <div class="row justify-content-center">
-                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
+                <div class="col-lg-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">1</span></h6>
                     <h3>利用申込</h3>
                     <img class="img-fluid my-3" src="../../images/signup.png">
                     <p><a class="text-decoration-none" data-toggle="modal" data-target="#applicationForm" href="#">利用申込</a>より利用登録をお願いします。</p>
                     <p class="text-left"><small class="text-muted">審査の結果、ご利用をお断りさせていただく場合もございます。</small></p>
                 </div>
-                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
+                <div class="col-lg-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">2</span></h6>
                     <h3>閲覧</h3>
                     <img class="img-fluid my-3" src="../../images/look-into.png">
                     <p>厳選されたグローバル人材をご覧ください。</p>
                 </div>
-                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
+                <div class="col-lg-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">3</span></h6>
                     <h3>招待</h3>
                     <img class="img-fluid my-3" src="../../images/invite.png">
                     <p>気になったら面会依頼を送りましょう。</p>
                     <p class="text-left"><small class="text-muted">「お気に入り」に追加して、会う前の質問・確認もできます。</small></p>
                 </div>
-                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
+                <div class="col-lg-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">4</span></h6>
                     <h3>設定</h3>
                     <img class="img-fluid my-3" src="../../images/appointment.png">
                     <p>専任CAが面会日時の設定を致します。</p>
                     <p class="text-left"><small class="text-muted">面会不可の場合、理由をフィードバック致します。</small></p>
                 </div>
-                <div class="col-md-6 col-xl-2 px-3 py-4 m-3 steps">
+                <div class="col-lg-6 col-xl-2 px-3 py-4 m-3 steps">
                     <h6>STEP <span class="text-primary">5</span></h6>
                     <h3>面会</h3>
                     <img class="img-fluid my-3" src="../../images/meet.png">
@@ -380,19 +380,19 @@
                         </section>
                         <input type="radio" name="accordion" id="cb2" />
                         <section class="box">
-                            <label class="box-title" for="cb1">費用はかかりますか？</label>
+                            <label class="box-title" for="cb2">費用はかかりますか？</label>
                             <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※ 後日、料金変更の可能性があります。<br></small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                            <div class="box-content">Global Talent Libraryは<b>3ヶ月100,000円で</b>ご利用いただけます。採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
                         </section>
                         <input type="radio" name="accordion" id="cb3" />
                         <section class="box">
-                            <label class="box-title" for="cb2">会える人数に制限はありますか？</label>
+                            <label class="box-title" for="cb3">会える人数に制限はありますか？</label>
                             <label class="box-close" for="acc-close"></label>
                             <div class="box-content">制限はありません。希望すれば<b>掲載者全員と会うこともできます</b>。但し、面会目的は毎回明示していただき、掲載者の同意を得られた場合のみお引き合わせ致します。</div>
                         </section>
                         <input type="radio" name="accordion" id="cb4" />
                         <section class="box">
-                            <label class="box-title" for="cb3">利用申込時の審査はどのような基準で行われますか？</label>
+                            <label class="box-title" for="cb4">利用申込時の審査はどのような基準で行われますか？</label>
                             <label class="box-close" for="acc-close"></label>
                             <div class="box-content">Global Talent Libraryは、参加者の皆さまが安心してご利用いただける場にすることを目指しております。企業・団体様に関しては、実態ある法人であること、各外国人コミュニティでの評判等を総合的に勘案して利用申込みを受け付けております。</div>
                         </section>
