@@ -64,7 +64,7 @@ class RegisterController extends Controller
             'position' => ['max:100'],
             'name' => ['required', 'string', 'max:100'],
             'email' => ['required', 'string', 'email', 'max:100', 'unique:users'],
-            'tel' => ['required', 'string', 'max:20'],
+            'tel' => ['required', 'regex:/^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$/', 'string'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             // 'keyphrase' => ['required', 'string', 'regex:/^chaman10$/'],
         ]);
