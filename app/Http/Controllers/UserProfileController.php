@@ -88,7 +88,7 @@ class UserProfileController extends Controller
             'position' => ['max:100'],
             'name' => ['required', 'string', 'max:100'],
             'email' => ['required', 'string', 'email', 'max:100'],
-            'tel' => ['required', 'string', 'max:20'],
+            'tel' => ['required', 'regex:/^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$/', 'string'],
         ]);
         
         $user->entity_name = $request->input('entity_name');

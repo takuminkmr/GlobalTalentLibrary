@@ -10,12 +10,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Layout
+// Base
+@import 'style';
+
+// Responsive Layouts
 @import 'layouts/base';
 @import 'layouts/mobile';
 @import 'layouts/tablet';
 @import 'layouts/laptop';
 @import 'layouts/pc';
-
-// Addition
-@import 'style';
