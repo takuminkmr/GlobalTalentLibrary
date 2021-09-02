@@ -31,7 +31,7 @@ class ApplyMeetMail extends Mailable
     public function build()
     {
         return $this->view('mail.invite')
-        ->from('career-advisor@sociarise.co.jp', 'Sociarise Career Advisor')
+        ->from('career-advisor@sociarise.co.jp', 'Global Talent Library事務局')
         ->subject('企業より面会のお誘いがありました！')
         ->bcc('career-advisor@sociarise.co.jp')
         ->with(['name' => $this->name]);
