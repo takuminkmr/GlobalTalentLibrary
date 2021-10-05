@@ -60,6 +60,9 @@ class ApplyController extends Controller
             $way = "オフィスに招待して";
         }
         if($way === "3"){
+            $way = "カフェなど待ち合わせ場所を別途決めて";
+        }
+        if($way === "4"){
             $way = "その他の方法で";
         }
 
@@ -71,10 +74,10 @@ class ApplyController extends Controller
             $purpose = "インターンシップのお誘い";
         }
         if($purpose === "3"){
-            $purpose = "交流を図るためのカジュアル面談";
+            $purpose = "ちょっと手伝ってほしいことがある";
         }
         if($purpose === "4"){
-            $purpose = "その他";
+            $purpose = "あなたやあなたの国・文化などの話が聞きたい";
         }
 
         $data = [

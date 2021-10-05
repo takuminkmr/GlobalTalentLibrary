@@ -10,9 +10,9 @@
                 <a class="text-decoration-none" href="/detail/{{ $new_face->id }}">
                 <img src="{{ Storage::url($new_face->photo) }}">
                 <div class="card-body">
-                    <h4 class="card-title text-center">{{ $new_face->gt_name }}</h4>
-                    <h6 class="card-text text-center mb-3">{{ $new_face->school }}　{{ $new_face->faculty }}</h6>
-                    <p class="card-text">{!! nl2br(e(Str::limit($new_face->introduction, 80))) !!}</p>
+                    <h6 class="card-title text-center">{{ $new_face->gt_name }}</h6>
+                    <p class="card-text text-center mb-3 font-weight-bold">{{ $new_face->school }}<br>{{ $new_face->faculty }}</p>
+                    <h6 class="card-text">{!! nl2br(e(Str::limit($new_face->introduction, 100))) !!}</h6>
                 </div>
                 </a>
             </div>
@@ -27,9 +27,9 @@
                 <a class="text-decoration-none" href="/detail/{{ $global_talent_name->id }}">
                 <img src="{{ Storage::url($global_talent_name->photo) }}">
                 <div class="card-body">
-                    <h4 class="card-title text-center">{{ $global_talent_name->gt_name }}</h4>
-                    <h6 class="card-text text-center mb-3">{{ $global_talent_name->school }}　{{ $global_talent_name->faculty }}</h6>
-                    <p class="card-text">{!! nl2br(e(Str::limit($global_talent_name->introduction, 80))) !!}</p>
+                    <h6 class="card-title text-center">{{ $global_talent_name->gt_name }}</h6>
+                    <p class="card-text text-center mb-3 font-weight-bold">{{ $global_talent_name->school }}<br>{{ $global_talent_name->faculty }}</p>
+                    <h6 class="card-text">{!! nl2br(e(Str::limit($global_talent_name->introduction, 100))) !!}</h6>
                 </div>
                 </a>
             </div>

@@ -118,7 +118,7 @@ return [
 
     'attributes' => [
         'email' => 'メールアドレス',
-        'tel' => 'ハイフン付きで電話番号',
+        'tel' => '電話番号',
         'password' => 'パスワード',
         'new-password' => '新しいパスワード',
         'current-password' => '現在のパスワード',

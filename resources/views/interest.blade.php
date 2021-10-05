@@ -10,9 +10,9 @@
                 <a class="text-decoration-none" href="/detail/{{ $interest->id }}">
                 <img src="{{ Storage::url($interest->photo) }}">
                 <div class="card-body">
-                    <h4 class="card-title text-center">{{ $interest->gt_name }}</h4>
-                    <h6 class="card-title text-center mb-3">{{ $interest->school }}　{{ $interest->faculty }}</h6>
-                    <p class="card-text">{!! nl2br(e(Str::limit( $interest->introduction, 80))) !!}</p>
+                    <h6 class="card-title text-center">{{ $interest->gt_name }}</h6>
+                    <p class="card-text text-center mb-3 font-weight-bold">{{ $interest->school }}<br>{{ $interest->faculty }}</p>
+                    <h6 class="card-text">{!! nl2br(e(Str::limit( $interest->introduction, 100))) !!}</h6>
                     <form method="POST" action="{{ route('interest.destroy') }}">
                     @csrf
                         <button class="btn btn-lg btn-block btn-danger">気になる人一覧から削除</button>

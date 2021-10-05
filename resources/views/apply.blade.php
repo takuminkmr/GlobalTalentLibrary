@@ -32,6 +32,10 @@
                         </div>
                         <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_way" id="meet_way3" value="3">
+                            <label class="form-check-label" for="meet_way3">カフェなど待ち合わせ場所を別途決めて</label>
+                        </div>
+                        <div class="form-check my-1">
+                            <input class="form-check-input" type="radio" name="meet_way" id="meet_way4" value="4">
                             <label class="form-check-label" for="meet_way3">その他の方法で</label>
                         </div>
                     </div>
@@ -50,11 +54,11 @@
                         </div>
                         <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose3" value="3">
-                            <label class="form-check-label" for="meet_purpose3">交流を図るためのカジュアル面談</label>
+                            <label class="form-check-label" for="meet_purpose3">ちょっと手伝ってほしいことがある</label>
                         </div>
                         <div class="form-check my-1">
                             <input class="form-check-input" type="radio" name="meet_purpose" id="meet_purpose4" value="4">
-                            <label class="form-check-label" for="meet_purpose4">その他</label>
+                            <label class="form-check-label" for="meet_purpose4">あなたやあなたの国・文化などの話が聞きたい</label>
                         </div>
                     </div>
                 </div>

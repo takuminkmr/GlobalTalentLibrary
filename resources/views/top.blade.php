@@ -136,7 +136,7 @@
         @endif
         <section class="full-height top-img">
             <p class="ccp-en movetext1">Global Talent Library</p>
-            <h1 class="ccp-ja movetext2">世界中の才能が集う</h1>
+            <h1 class="ccp-ja movetext2">世界中から才能が集う</h1>
         </section>
         <section class="what-is-gt">
             <div class="container-fluid">
@@ -352,23 +352,26 @@
             </div>
         </div>
         </section>
-            <!-- <h2 class="text-center mt-5">ユーザーの声</h2>
-            <h5 class="text-center">喜びの声を集まっています</h5>
-            <div class="user-voice row justify-content-center">
-                <div class="col-md-3">
-                    <h4>Voice１</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+        <section class="clients">
+        <div class="container">
+            <h2 class="text-center my-5">ご利用企業様</h2>
+            <div class="row justify-content-between col-10 mx-auto">
+                <div class="col-sm-3 logo">
+                    <img src="../../images/nms-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-                <div class="col-md-3">
-                    <h4>Voice２</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="col-sm-2 logo">
+                    <img src="../../images/mol-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-                <div class="col-md-3">
-                    <h4>Voice３</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="col-sm-3 logo">
+                    <img src="../../images/mynavi-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-            </div> -->
-        <section class="faq">
+                <div class="col-sm-2 logo">
+                    <img src="../../images/isfactory-min.png" style="width: 100%; height: auto; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="faq mt-5">
             <div class="container-fluid">
                 <div class="justify-content-center row">
                     <div class="col-sm-10">
@@ -385,7 +388,7 @@
                         <section class="box">
                             <label class="box-title" for="cb2">費用はかかりますか？</label>
                             <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>後日、料金の変更を行う可能性があります。</small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※後日、料金の変更を行う可能性があります。</small>アルバイト・インターンのお誘いや社員としての採用、育成・定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
                         </section>
                         <input type="radio" name="accordion" id="cb3" />
                         <section class="box">
