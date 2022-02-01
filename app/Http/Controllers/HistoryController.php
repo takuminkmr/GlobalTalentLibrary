@@ -38,6 +38,9 @@ class HistoryController extends Controller
             $meet_way = 'オフィスに招待して';
         }
         if($meet_way === 3) {
+            $meet_way = 'カフェなど待ち合わせ場所を別途決めて';
+        }
+        if($meet_way === 4) {
             $meet_way = 'その他の方法で';
         }
 
@@ -51,10 +54,10 @@ class HistoryController extends Controller
             $meet_purpose = 'インターンシップ';
         }
         if($meet_purpose === 3) {
-            $meet_purpose = '交流を図るためのカジュアル面談';
+            $meet_purpose = 'ちょっと手伝ってほしいことがある';
         }
         if($meet_purpose === 4) {
-            $meet_purpose = 'その他';
+            $meet_purpose = 'あなたやあなたの国・文化などの話が聞きたい';
         }
 
         return view('history', compact('id', 'apply_meets', 'meet_way', 'meet_purpose'));

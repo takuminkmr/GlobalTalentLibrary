@@ -77,7 +77,7 @@
                         <label for="tel" class="col-md-4 col-form-label text-md-right">{{ __('電話番号') }}</label>
 
                         <div class="col-md-6">
-                            <input id="tel" type="text" class="form-control @error('tel') is-invalid @enderror" name="tel" value="{{ $user->tel }}" required autofocus>
+                            <input id="tel" type="text" class="form-control @error('tel') is-invalid @enderror" name="tel" value="{{ $user->tel }}" placeholder="00-1234-5678" required autofocus>
 
                             @error('tel')
                                 <span class="invalid-feedback" role="alert">

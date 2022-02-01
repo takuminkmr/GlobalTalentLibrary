@@ -12,7 +12,7 @@
             <h6 class="mb-3">{{ $global_talent->school }}　{{ $global_talent->faculty }}</h6>
             <p>{{ $global_talent->introduction }}</p>
             <div>
-                <button type="button" class="btn btn-primary btn-lg btn-block my-4" onclick="location.href='/apply/{{ $global_talent->id }}'">会ってみたい</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block my-4" onclick="location.href='/apply/{{ $global_talent->id }}'">会いたい</button>
 
                 <form method="POST" action="{{ route('interest.add') }}">
                     @csrf

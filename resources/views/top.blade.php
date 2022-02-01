@@ -136,9 +136,33 @@
         @endif
         <section class="full-height top-img">
             <p class="ccp-en movetext1">Global Talent Library</p>
-            <h1 class="ccp-ja movetext2">世界中の才能が集う</h1>
+            <h1 class="ccp-ja movetext2">世界中から才能が集う</h1>
         </section>
-        <section class="what-is-gt">
+        <section class="advantages">
+            <div class="container py-5 mt-lg-5">
+                <h2 class="text-center">Global Talent Libraryの特長</h2>
+                <h6 class="text-center pb-3">従来の採用慣行に馴染まない世界の秀才と出会える</h6>
+                <div class="row">
+                    <div class="col-lg-4 my-4">
+                        <h5>卒業間近になって、日本での就職を意識し始めた人</h5>
+                        <img class="my-3" src="../../images/lady-in-trouble1-min.png">
+                        <p>在学中に就職活動を行うことは、世界的に見て珍しい習慣です。「知らないうちに就活が終わっていた！」こんな人がたくさんいます。</p>
+                    </div>
+                    <div class="col-lg-4 my-4">
+                        <h5>研究、勉学、その他活動に集中していた人</h5>
+                        <img class="my-3" src="../../images/man-in-trouble1-min.png">
+                        <p>文部科学省奨学金生など特に優秀な人たちは、目の前の活動に全力を注ぎ、就職活動が後回しになります。</p>
+                    </div>
+                    <div class="col-lg-4 my-4">
+                        <h5>ウェブテストなど明らかに不利な選考で落ちた人</h5>
+                        <img class="my-3" src="../../images/lady-in-trouble2-min.png">
+                        <p>彼女らは言います。「問題自体は難しくない。ただ日本語を読むところに時間がかかるから、制限時間内に解ききれない。」</p>
+                    </div>
+                </div>
+                <p class="text-lg-center py-3 font-weight-bold">長く、複雑で、画一的な採用選考により、数え切れないほど多くの才能が流失しています。<br>Global Talent Libraryにはそのような人材が登録されています。</p>
+            </div>
+        </section>
+        {{-- <section class="what-is-gt">
             <div class="container-fluid">
                 <div class="row py-5">
                     <div class="col-md-9 col-lg-8 col-xl-7 offset-xl-2 descr">
@@ -165,11 +189,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <section class="gt-sample">
         <div class="container">
-            <h2 class="display-4">Global Talent Libraryでは、<br>こんな人たちと出会えます。</h2>
-            <div class="row">
+            <h2 class="display-4">百聞は一見に如かず。</h2>
+            {{-- <div class="row">
                 <div class="col-lg img">
                     <img class="img-fluid" src="../../images/timur-min.jpg">
                 </div>
@@ -226,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="row">
                 <div class="col-lg img">
                     <img class="img-fluid" src="../../images/yucheng-min.jpg">
@@ -257,30 +281,6 @@
                 </div>
             </div>
         </div>
-        </section>
-        <section class="advantages">
-            <div class="container py-5">
-                <h2 class="text-center">Global Talent Libraryのいいところ</h2>
-                <h6 class="text-center pb-3">従来の採用慣行に馴染まない世界の秀才と出会える</h6>
-                <div class="row">
-                    <div class="col-lg-4 my-4">
-                        <h5>卒業間近になって、日本での就職を意識し始めた人</h5>
-                        <img class="my-3" src="../../images/lady-in-trouble1-min.png">
-                        <p>在学中に就職活動を行うことは、世界的に見て珍しい習慣です。「知らないうちに就活が終わっていた！」こんな人がたくさんいます。</p>
-                    </div>
-                    <div class="col-lg-4 my-4">
-                        <h5>研究、勉学、その他活動に集中していた人</h5>
-                        <img class="my-3" src="../../images/man-in-trouble1-min.png">
-                        <p>文部科学省奨学金生など特に優秀な人たちは、目の前の活動に全力を注ぎ、就職活動が後回しになります。</p>
-                    </div>
-                    <div class="col-lg-4 my-4">
-                        <h5>ウェブテストなど明らかに不利な選考で落ちた人</h5>
-                        <img class="my-3" src="../../images/lady-in-trouble2-min.png">
-                        <p>彼女らは言います。「問題自体は難しくない。ただ日本語を読むところに時間がかかるから、制限時間内に解ききれない。」</p>
-                    </div>
-                </div>
-                <p class="text-lg-center py-3 font-weight-bold">長く、複雑で、画一的な採用選考により、数え切れないほど多くの才能が流失しています。<br>Global Talent Libraryにはそのような人材が登録されています。</p>
-            </div>
         </section>
         <section class="service-flow pt-5">
         <div class="container-fluid">
@@ -352,23 +352,26 @@
             </div>
         </div>
         </section>
-            <!-- <h2 class="text-center mt-5">ユーザーの声</h2>
-            <h5 class="text-center">喜びの声を集まっています</h5>
-            <div class="user-voice row justify-content-center">
-                <div class="col-md-3">
-                    <h4>Voice１</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+        {{-- <section class="clients">
+        <div class="container">
+            <h2 class="text-center my-5">ご利用企業様</h2>
+            <div class="row justify-content-between col-10 mx-auto">
+                <div class="col-sm-3 logo">
+                    <img src="../../images/nms-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-                <div class="col-md-3">
-                    <h4>Voice２</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="col-sm-2 logo">
+                    <img src="../../images/mol-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-                <div class="col-md-3">
-                    <h4>Voice３</h4>
-                    <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+                <div class="col-sm-3 logo">
+                    <img src="../../images/mynavi-min.png" style="width: 100%; height: auto; object-fit: cover;">
                 </div>
-            </div> -->
-        <section class="faq">
+                <div class="col-sm-2 logo">
+                    <img src="../../images/isfactory-min.png" style="width: 100%; height: auto; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        </section> --}}
+        <section class="faq mt-5">
             <div class="container-fluid">
                 <div class="justify-content-center row">
                     <div class="col-sm-10">
@@ -385,7 +388,7 @@
                         <section class="box">
                             <label class="box-title" for="cb2">費用はかかりますか？</label>
                             <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>後日、料金の変更を行う可能性があります。</small>採用や育成、定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
+                            <div class="box-content">Global Talent Libraryは<b>無料で</b>ご利用いただけます。<small>※後日、料金の変更を行う可能性があります。</small>アルバイト・インターンのお誘いや社員としての採用、育成・定着面での課題解決は、別途有料のサービスをご用意しておりますので、お気軽にご相談ください。詳しくは<a href="https://sociarise.co.jp/service-guide/" class="text-decoration-none" rel="noopener noreferrer" targer="_blank">こちら</a></div>
                         </section>
                         <input type="radio" name="accordion" id="cb3" />
                         <section class="box">
